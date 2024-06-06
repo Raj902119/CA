@@ -41,7 +41,8 @@
 
 .dropdownService {
   position: absolute;
-  top: 100%; /* Position below the button */
+  top: 100%;
+  /* Position below the button */
   left: 70%;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -50,9 +51,10 @@
   flex-direction: column;
 }
 
-.dropdownInsights{
+.dropdownInsights {
   position: absolute;
-  top: 100%; /* Position below the button */
+  top: 100%;
+  /* Position below the button */
   left: 80%;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
