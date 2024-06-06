@@ -2,12 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.container {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  background-color: #e8eaf6;
-}
-
 .nav {
   display: flex;
   flex-direction: row;
@@ -15,6 +9,10 @@
   align-items: center;
   height: 4rem;
   position: relative;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #A0DEFF;
+
 }
 
 .nav-logo {

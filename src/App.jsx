@@ -19,7 +19,7 @@ import Navbar from './component/ui/Navbar'
 function App() {
   return (
     <>
-      <Navbar />
+    <Navbar />
       <Routes>
         {/* Pages */}
         <Route path='/' element={<Home />} />

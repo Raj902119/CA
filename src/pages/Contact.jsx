@@ -11,11 +11,11 @@ const Contact = () => {
   return (
     <Box bgcolor="white" color="text.primary" py={3} >
       <Container>
-      <Box alignItems="center" ml={2}>
-      <Typography variant="h4" color="black">
-          Contact us
-        </Typography>
-      </Box>
+      <Box display='flex' justifyContent="center" alignItems="center" textAlign="center" ml={2} color='primary'>
+          <Typography variant="h4" color="primary">
+            Contact
+          </Typography>
+        </Box>
         <Grid container spacing={4} mt={2}>
           <Grid item xs={12} lg={6}>
             <Grid container spacing={4}>
