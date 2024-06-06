@@ -5,9 +5,9 @@ import './App.css'
 
 // Pages
 import Home from './pages/Home'
-import Gallery from './pages/Gallery'
-import Awards from './pages/Awards'
-import Contact from './pages/Contact'
+import Gallery from './pages/Gallary.jsx'
+import Awards from './pages/Awards.jsx'
+import Contact from './pages/Contact.jsx'
 // Services
 import Services from './pages/services/ServicePage'
 import CAFirm from './pages/services/CaFirmService'
