@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Carrer() {
-  return <div>Carrer</div>
+  return <div>Carrers</div>
 }
 
 export default Carrer

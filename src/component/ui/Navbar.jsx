@@ -16,6 +16,7 @@ import {
   ListItemText,
 } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
+import { useNavigate } from 'react-router-dom'
 import React, { useState } from 'react'
 import logo from './assets/CALOGO.png'
 import './navbar.css'
@@ -23,6 +24,7 @@ import './navbar.css'
 const Navbar = () => {
   const [open, setOpen] = React.useState(false)
   const theme = useTheme()
+  const navigate = useNavigate()
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen)
@@ -119,6 +121,7 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
+              onClick={() => navigate('/business-strategist')}
             >
               <ListItemText primary='Business Strategist' />
             </ListItemButton>
@@ -128,6 +131,7 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
+              onClick={() => navigate('/advisory')}
             >
               <ListItemText primary='Advisory' />
             </ListItemButton>
@@ -137,6 +141,7 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
+              onClick={() => navigate('/startup-funding')}
             >
               <ListItemText primary='Startup Funding' />
             </ListItemButton>
@@ -146,6 +151,7 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
+              onClick={() => navigate('/consultation')}
             >
               <ListItemText primary='Consultation' />
             </ListItemButton>
@@ -189,6 +195,7 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
+              onClick={() => navigate('/insights/apple')}
             >
               <ListItemText primary='Apple' />
             </ListItemButton>
@@ -198,6 +205,7 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
+              onClick={() => navigate('/insights/ball')}
             >
               <ListItemText primary='Ball' />
             </ListItemButton>
@@ -207,6 +215,7 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
+              onClick={() => navigate('/insights/cat')}
             >
               <ListItemText primary='Cat' />
             </ListItemButton>
@@ -216,6 +225,7 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
+              onClick={() => navigate('/insights/dog')}
             >
               <ListItemText primary='Dog' />
             </ListItemButton>
@@ -231,7 +241,7 @@ const Navbar = () => {
                 paddingLeft: '20px',
               },
             }}
-            onClick={() => setRaj((prev) => !prev)}
+            onClick={() => navigate('/career')}
           >
             <ListItemText
               primaryTypographyProps={{
@@ -258,7 +268,7 @@ const Navbar = () => {
                 paddingLeft: '20px',
               },
             }}
-            onClick={() => setRaj((prev) => !prev)}
+            onClick={() => navigate('/contact')}
           >
             <ListItemText
               primaryTypographyProps={{
@@ -283,7 +293,9 @@ const Navbar = () => {
     <div className='nav'>
       <img src={logo} alt='logo' className='nav-logo' />
       <div className='nav-cont'>
-        <button className='nav-title'>Home</button>
+        <button className='nav-title' onClick={() => navigate('/')}>
+          Home
+        </button>
         <button className='nav-title' onClick={toggleServicesDropdown}>
           <span style={{ display: 'flex', alignItems: 'flex-end' }}>
             Services
@@ -296,10 +308,30 @@ const Navbar = () => {
         </button>
         {showServicesDropdown && (
           <div className='dropdownService'>
-            <button className='dropdown-item'>Business Strategist</button>
-            <button className='dropdown-item'>Advisory</button>
-            <button className='dropdown-item'>Startup Funding</button>
-            <button className='dropdown-item'>Consultation</button>
+            <button
+              className='dropdown-item'
+              onClick={() => navigate('/services/legal')}
+            >
+              Consultation
+            </button>
+            <button
+              className='dropdown-item'
+              onClick={() => navigate('/services/investor')}
+            >
+              Business Strategist
+            </button>
+            <button
+              className='dropdown-item'
+              onClick={() => navigate('/services/ca')}
+            >
+              Advisory
+            </button>
+            <button
+              className='dropdown-item'
+              onClick={() => navigate('/services/startup')}
+            >
+              Startup
+            </button>
           </div>
         )}
         <button className='nav-title' onClick={toggleInsightsDropdown}>
@@ -314,14 +346,38 @@ const Navbar = () => {
         </button>
         {showInsightsDropdown && (
           <div className='dropdownInsights'>
-            <button className='dropdown-item'>apple</button>
-            <button className='dropdown-item'>ball</button>
-            <button className='dropdown-item'>cat</button>
-            <button className='dropdown-item'>dog</button>
+            <button
+              className='dropdown-item'
+              onClick={() => navigate('/insights/apple')}
+            >
+              Apple
+            </button>
+            <button
+              className='dropdown-item'
+              onClick={() => navigate('/insights/ball')}
+            >
+              Ball
+            </button>
+            <button
+              className='dropdown-item'
+              onClick={() => navigate('/insights/cat')}
+            >
+              Cat
+            </button>
+            <button
+              className='dropdown-item'
+              onClick={() => navigate('/insights/dog')}
+            >
+              Dog
+            </button>
           </div>
         )}
-        <button className='nav-title'>Career</button>
-        <button className='nav-title'>Contact</button>
+        <button className='nav-title' onClick={() => navigate('/career')}>
+          Career
+        </button>
+        <button className='nav-title' onClick={() => navigate('/contact')}>
+          Contact
+        </button>
       </div>
       <div className='menu'>
         <Button onClick={toggleDrawer(true)}>

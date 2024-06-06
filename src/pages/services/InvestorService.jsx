@@ -1,7 +1,57 @@
 import React from 'react'
-
+import './CaFirmService.css'
 function InvestorService() {
-  return <div>Investor-service</div>
+  return (
+    <>
+      <section class='services'>
+        <h2>Investor Services</h2>
+        <div class='service-list'>
+          <div class='service-item'>
+            <h3>Investment Planning</h3>
+            <p>
+              Our investment planning services help you create a diversified
+              portfolio to meet your financial goals.
+            </p>
+          </div>
+          <div class='service-item'>
+            <h3>Wealth Management</h3>
+            <p>
+              We offer personalized wealth management strategies to grow and
+              protect your assets.
+            </p>
+          </div>
+          <div class='service-item'>
+            <h3>Risk Assessment</h3>
+            <p>
+              Our risk assessment services identify potential risks and provide
+              solutions to mitigate them effectively.
+            </p>
+          </div>
+          <div class='service-item'>
+            <h3>Retirement Planning</h3>
+            <p>
+              We provide comprehensive retirement planning to ensure a secure
+              and comfortable retirement.
+            </p>
+          </div>
+          <div class='service-item'>
+            <h3>Tax Optimization</h3>
+            <p>
+              Our tax optimization services help you minimize tax liabilities
+              and maximize after-tax returns.
+            </p>
+          </div>
+          <div class='service-item'>
+            <h3>Estate Planning</h3>
+            <p>
+              We offer estate planning services to help you manage and transfer
+              your wealth efficiently.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  )
 }
 
 export default InvestorService

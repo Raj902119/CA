@@ -1,10 +1,9 @@
 import React from 'react'
-import Footer from './Footer'
-
+import Cards from '../component/ui/Cards'
 function Home() {
   return (
     <>
-      <Footer />
+      <Cards />
     </>
   )
 }
