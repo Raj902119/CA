@@ -11,10 +11,10 @@ import Contact from './pages/Contact.jsx'
 import Cards from './pages/WWDCards.jsx'
 // Services
 import Services from './pages/services/ServicePage'
-import CAFirm from './pages/services/CaFirmService'
-import LegalAdvisory from './pages/services/LegalService'
-import Startup from './pages/services/StartupService'
-import Investor from './pages/services/InvestorService'
+import CAFirm from './pages/services/CafirmServices/CaFirmService.jsx'
+import LegalAdvisory from './pages/services/LegalServices/LegalService.jsx'
+import Startup from './pages/services/StartupServices/StartupService.jsx'
+import Investor from './pages/services/InvestorServices/InvestorService.jsx'
 
 //Navbar Footer
 import Navbar from './component/ui/Navbar'
