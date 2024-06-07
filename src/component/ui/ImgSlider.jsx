@@ -3,13 +3,12 @@ import SimpleImageSlider from 'react-simple-image-slider'
 import './ImgSlider.css' // Import the CSS file for styling
 
 const images = [
-  { url: 'assets/img1.jpeg' },
-  { url: 'assets/img2.jpeg' },
-  { url: 'assets/img3.jpeg' },
+  { url: 'assets/img5.jpeg' },
   { url: 'assets/img4.jpeg' },
-  { url: 'assets/img1.jpeg' },
-  { url: './assets/img2.jpeg' },
-  { url: './assets/img3.jpeg' },
+  { url: 'assets/img5.jpeg' },
+  { url: 'assets/img4.jpeg' },
+  { url: 'assets/img5.jpeg' },
+  { url: 'assets/img4.jpeg' },
 ]
 
 export const ImgSlider = () => {

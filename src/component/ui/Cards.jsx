@@ -66,40 +66,42 @@ const CardSlider = () => {
   }, [])
 
   return (
-    <div className='slide-container'>
-      <div
-        className='slide-content'
-        style={{
-          transform: `translateX(-${currentIndex * 40}%)`,
-          transition: 'transform 0.5s ease',
-        }}
-      >
-        {videos.map((video, index) => (
-          <div className='card' key={index}>
-            <div className='card-content-wrapper'>
-              <div className='image-content'>
-                <iframe
-                  width='560'
-                  height='315'
-                  src={video.url}
-                  title={video.title}
-                  frameBorder='0'
-                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                  referrerPolicy='strict-origin-when-cross-origin'
-                  allowFullScreen
-                ></iframe>
+    <>
+      <div className='slide-container'>
+        <div
+          className='slide-content'
+          style={{
+            transform: `translateX(-${currentIndex * 40}%)`,
+            transition: 'transform 0.5s ease',
+          }}
+        >
+          {videos.map((video, index) => (
+            <div className='card' key={index}>
+              <div className='card-content-wrapper'>
+                <div className='image-content'>
+                  <iframe
+                    width='560'
+                    height='315'
+                    src={video.url}
+                    title={video.title}
+                    frameBorder='0'
+                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                    referrerPolicy='strict-origin-when-cross-origin'
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className='navBtn left' onClick={prevSlide}>
+          &lt;
+        </div>
+        <div className='navBtn right' onClick={nextSlide}>
+          &gt;
+        </div>
       </div>
-      <div className='navBtn left' onClick={prevSlide}>
-        &lt;
-      </div>
-      <div className='navBtn right' onClick={nextSlide}>
-        &gt;
-      </div>
-    </div>
+    </>
   )
 }
 
