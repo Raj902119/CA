@@ -6,8 +6,9 @@ import './App.css'
 // Pages
 import Home from './pages/Home'
 import Gallery from './pages/Gallary.jsx'
-import Awards from './pages/Awards.jsx'
+import Award from './pages/Award.jsx'
 import Contact from './pages/Contact.jsx'
+import Cards from './pages/Cards.jsx'
 // Services
 import Services from './pages/services/ServicePage'
 import CAFirm from './pages/services/CaFirmService'
@@ -18,6 +19,7 @@ import Investor from './pages/services/InvestorService'
 //Navbar Footer
 import Navbar from './component/ui/Navbar'
 import Footer from './pages/Footer'
+// import Award from './pages/Award.jsx'
 
 //
 function App() {
@@ -30,7 +32,8 @@ function App() {
         {/* Pages */}
         <Route path='/' element={<Home />} />
         <Route path='/gallery' element={<Gallery />} />
-        <Route path='/awards' element={<Awards />} />
+        <Route path='/award' element={<Award/>} />
+        <Route path='/cards' element={<Cards/>}/>
         <Route path='/contact' element={<Contact />} />
         {/* Service */}
         <Route path='/services' element={<Services />} />
