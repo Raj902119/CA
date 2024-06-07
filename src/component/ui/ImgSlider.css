@@ -1,8 +1,6 @@
 /* ImgSlider.css */
 .img-slider-container {
  width: 100%;
- max-width: 1800px;
- padding-top: 20px;
  /* Max width to keep it within a reasonable size */
  height: auto;
  margin: auto;
@@ -20,4 +18,19 @@
  /* Maintain aspect ratio and fit within container */
  object-position: center;
  /* Center the image within its container */
+}
+
+/* ImgSlider.css */
+.text-overlay {
+ position: absolute;
+ top: 10%;
+ left: 5%;
+ transform: none;
+ /* Remove the transform */
+ color: white;
+ font-size: 3.5rem;
+ font-weight: bold;
+ text-align: left;
+ /* Align text to the left */
+ z-index: 10;
 }
