@@ -83,7 +83,10 @@ function CustomCarousel({ children }) {
                 e.preventDefault()
                 setActiveIndex(index)
               }}
-            ></button>
+            >
+              {' '}
+              {item}
+            </button>
           )
         })}
       </div>
