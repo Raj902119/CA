@@ -1,9 +1,11 @@
 import React from 'react'
-import Cards from '../component/ui/Cards'
+import Cards from './WWDCards'
+import Award from './Award'
+
 function Home() {
   return (
     <>
-      <Cards />
+      <Award />
     </>
   )
 }

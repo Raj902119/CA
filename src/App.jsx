@@ -8,7 +8,7 @@ import Home from './pages/Home'
 import Gallery from './pages/Gallary.jsx'
 import Award from './pages/Award.jsx'
 import Contact from './pages/Contact.jsx'
-import Cards from './pages/Cards.jsx'
+import Cards from './pages/WWDCards.jsx'
 // Services
 import Services from './pages/services/ServicePage'
 import CAFirm from './pages/services/CaFirmService'
@@ -25,11 +25,8 @@ import Footer from './pages/Footer'
 function App() {
   return (
     <>
-      {/* Navbar */}
       <Navbar />
-      {/* Navbar */}
       <Routes>
-        {/* Pages */}
         <Route path='/' element={<Home />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/award' element={<Award/>} />

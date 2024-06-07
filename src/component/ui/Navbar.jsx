@@ -268,6 +268,33 @@ const Navbar = () => {
                 paddingLeft: '20px',
               },
             }}
+            onClick={() => navigate('/gallary')}
+          >
+            <ListItemText
+              primaryTypographyProps={{
+                sx: {
+                  fontWeight: 'bold',
+                  fontSize: '1.2rem',
+                  '@media (max-width:600px)': {
+                    fontSize: '0.8rem',
+                  },
+                },
+              }}
+            >
+              Gallary
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <Divider />
+        <ListItem disablePadding>
+          <ListItemButton
+            sx={{
+              height: '5rem',
+              paddingLeft: '40px',
+              '@media (max-width:600px)': {
+                paddingLeft: '20px',
+              },
+            }}
             onClick={() => navigate('/contact')}
           >
             <ListItemText
@@ -374,6 +401,9 @@ const Navbar = () => {
         )}
         <button className='nav-title' onClick={() => navigate('/career')}>
           Career
+        </button>
+        <button className='nav-title' onClick={() => navigate('/gallary')}>
+          Gallary
         </button>
         <button className='nav-title' onClick={() => navigate('/contact')}>
           Contact
