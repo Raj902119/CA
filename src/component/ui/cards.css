@@ -1,25 +1,31 @@
-/* Add these styles to your existing style.css */
-
+/* Existing styles */
 .slide-container {
- width: 100%;
+ width: 75%;
  overflow: hidden;
  position: relative;
+ margin: 0 auto;
+ /* Center the container horizontally */
 }
 
 .slide-content {
  display: flex;
- transition: transform 0.3s ease;
-}
-
-.card-wrapper {
- display: flex;
+ transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+ /* Updated transition */
 }
 
 .card {
  flex: 0 0 33.33%;
  box-sizing: border-box;
  padding: 15px;
+ transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+ /* Added transition */
 }
+
+.card-wrapper {
+ display: flex;
+}
+
+
 
 .card-content-wrapper h2 {
  color: #fff;
@@ -70,8 +76,6 @@
 .image-content {
  position: relative;
  width: 100%;
- padding-top: 75%;
- /* Maintain aspect ratio */
 }
 
 .overlay {
@@ -84,7 +88,7 @@
  transition: opacity 0.3s ease;
 }
 
-.card-content-wrapper:hover .overlay {
+.card-content-wrapper .overlay {
  opacity: 1;
 }
 
