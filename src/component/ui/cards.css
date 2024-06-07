@@ -1,16 +1,13 @@
-/* Existing styles */
 .slide-container {
  width: 75%;
  overflow: hidden;
  position: relative;
  margin: 0 auto;
- /* Center the container horizontally */
 }
 
 .slide-content {
  display: flex;
  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
- /* Updated transition */
 }
 
 .card {
@@ -18,7 +15,6 @@
  box-sizing: border-box;
  padding: 15px;
  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
- /* Added transition */
 }
 
 .card-wrapper {
@@ -131,7 +127,6 @@
  background-color: #0056b3;
 }
 
-/* Navigation buttons */
 .navBtn {
  position: absolute;
  top: 50%;
@@ -155,7 +150,6 @@
  right: 10px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 950px) {
  .card {
   flex: 0 0 50%;
@@ -167,3 +161,39 @@
   flex: 0 0 100%;
  }
 }
+
+/* cards.css */
+/* .slide-container {
+ position: relative;
+ width: 100%;
+ overflow: hidden;
+ margin: auto;
+}
+
+.slide-content {
+ display: flex;
+ transition: transform 0.5s ease;
+}
+
+.card {
+ min-width: 100%;
+ box-sizing: border-box;
+ padding: 10px;
+}
+
+.card-content-wrapper {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.image-content {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+iframe {
+ width: 100%;
+ height: 100%;
+} */
