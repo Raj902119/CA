@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import './cards.css' // Make sure to adjust the path if necessary
+import './Cards.css' // Make sure to adjust the path if necessary
 
 const CardSlider = () => {
   const videos = [

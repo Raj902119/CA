@@ -1,9 +1,16 @@
-import React from 'react';
-import "../CafirmServices/CaFirmService.css";
+import React from 'react'
+import '../CafirmServices/CaFirmService.css'
+import logo from './legal2.jpg'
+import Banner from '../../../component/ui/Banner'
 
 function LegalService() {
   return (
     <>
+      <Banner
+        imageUrl={logo}
+        breadcrumb='Home > Corporate Laws'
+        headline='Corporate Laws'
+      />{' '}
       <section className='services'>
         <h2>Legal Services</h2>
         <div className='service-list'>
@@ -11,15 +18,15 @@ function LegalService() {
             <div className='service-item'>
               <h3>Corporate Law</h3>
               <p>
-                Our corporate law services ensure your business complies with all
-                legal regulations and standards.
+                Our corporate law services ensure your business complies with
+                all legal regulations and standards.
               </p>
             </div>
             <div className='service-item'>
               <h3>Contract Drafting</h3>
               <p>
-                We provide professional contract drafting services to protect your
-                interests in business agreements.
+                We provide professional contract drafting services to protect
+                your interests in business agreements.
               </p>
             </div>
             <div className='service-item'>
@@ -29,20 +36,20 @@ function LegalService() {
                 services.
               </p>
             </div>
-          </div>   
+          </div>
           <div className='serviceB'>
             <div className='service-item'>
               <h3>Employment Law</h3>
               <p>
-                Our employment law services help you navigate the complexities of
-                labor regulations.
+                Our employment law services help you navigate the complexities
+                of labor regulations.
               </p>
             </div>
             <div className='service-item'>
               <h3>Litigation Support</h3>
               <p>
-                We offer expert litigation support to assist you in legal disputes
-                and proceedings.
+                We offer expert litigation support to assist you in legal
+                disputes and proceedings.
               </p>
             </div>
             <div className='service-item'>
@@ -52,11 +59,11 @@ function LegalService() {
                 compliance services.
               </p>
             </div>
-          </div>  
+          </div>
         </div>
       </section>
     </>
-  );
+  )
 }
 
-export default LegalService;
+export default LegalService

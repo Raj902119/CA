@@ -1,7 +1,7 @@
 
 .services {
-  margin: 0 5rem;
-  padding: 2rem 0; /* Added padding */
+  padding: 2rem 0;
+  /* Added padding */
   text-align: center;
 }
 
@@ -33,7 +33,8 @@
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px; /* Each item takes full width */
+  width: 300px;
+  /* Each item takes full width */
   box-sizing: border-box;
   height: 300px;
   display: flex;
@@ -52,6 +53,7 @@
 }
 
 @media (min-width: 600px) {
+
   .serviceA,
   .serviceB {
     flex-direction: row;
@@ -59,7 +61,8 @@
   }
 
   .service-item {
-    width: calc(50% - 1rem); /* Each item takes half the width with some margin */
+    width: calc(50% - 1rem);
+    /* Each item takes half the width with some margin */
   }
 
   .services {

@@ -6,7 +6,7 @@ import './App.css'
 // Pages
 import Home from './pages/Home'
 import Gallery from './pages/Gallary.jsx'
-import Award from './pages/Award.jsx'
+// import Award from './pages/Award.jsx'
 import Contact from './pages/Contact.jsx'
 import Cards from './pages/WWDCards.jsx'
 // Services
@@ -19,7 +19,8 @@ import Investor from './pages/services/InvestorServices/InvestorService.jsx'
 //Navbar Footer
 import Navbar from './component/ui/Navbar'
 import Footer from './pages/Footer'
-// import Award from './pages/Award.jsx'
+import Careers from './pages/Careers.jsx'
+import Award from './pages/Award.jsx'
 
 //
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path='/award' element={<Award />} />
         <Route path='/cards' element={<Cards />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/career' element={<Careers />} />
         {/* Service */}
         <Route path='/services' element={<Services />} />
         <Route path='/services/ca' element={<CAFirm />} />
