@@ -1,22 +1,45 @@
+/* .careerbag{
+    background-image:url(../images/career.jpg);
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+}
+.careerbag h2{
+ color: #f6f5f5;
+ font-size: 30px;
+ font-weight: bold;
+ text-align:justify;
+ padding: 9%;
+} */
+/* .careerbag p{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    
+} */
 .ca-contact-form{
-    background-color: #F4F4F4;
+    background-color: #F3F3F3;
     margin-top: 20px;
     border-radius: 10px;
     width: 100%;
     height: 70vh;
     padding: 5px;
-    box-shadow: 5px 5px 18px rgb(45, 46, 47)
+    box-shadow: 2px 3px 20px rgb(45, 46, 47)
 }
-.form-control-sub{
+.form-submit{
+    background-color: #efa00d;
+    padding: 10px;
+    border-radius: 30px;    
+}
+/* .form-control-sub{
     text-align: center;
-}
+} */
 .content-bot{
-    /* margin: px; */
     overflow: hidden;
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
     display: flex;
     flex-wrap: wrap;
-    
 }
 .content-bot h2{
     font-size: 30px;
@@ -27,15 +50,14 @@
     font-weight: 600;
 }
 .content-bot .form-control{
-    width: 90%;
-    padding: 10px 0px 10px 0px;
+    width: 70%;
+    padding: 10px 0px 10px 10px;
     margin: 15px 0px 15px 0px ;
     border-radius: 10px;
 }
 
 .content-bot .ca-divider{
     display: flex;
-    /* flex-wrap: wrap; */
 }
 .content-bot .ca-divider textarea{
     width: 100%;
@@ -46,12 +68,20 @@
 .careers span{
     color: #efa00d;
 }
+.careers p{
+    color: rgb(80, 70, 70);
+}
+
+.faicon{
+    margin-right: 10px;
+}
+/* start media quary */
+
 @media screen and (min-width: 768px){
     .ca-contact-form{
         background-color: #F4F4F4;
         padding: 30px;
         margin: 50px;
-        /* border-radius: 20px; */ 
         width: 35%;
         height: 58vh;
    
@@ -75,3 +105,4 @@
         margin: 50px;
     }
 }
+/* end media quary */

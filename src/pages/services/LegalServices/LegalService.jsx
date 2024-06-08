@@ -11,6 +11,7 @@ function LegalService() {
             <div className='service-item'>
               <h3>Corporate Law</h3>
               <p>
+
                 Our corporate law services ensure your business complies with all
                 legal regulations and standards.
               </p>
