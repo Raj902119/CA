@@ -1,7 +1,5 @@
-import CloseIcon from '@mui/icons-material/Close'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
-import MenuIcon from '@mui/icons-material/Menu'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
   Box,
   Button,
@@ -14,15 +12,25 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Typography,
 } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
-import { useNavigate } from 'react-router-dom'
-import React, { useState } from 'react'
+import CloseIcon from '@mui/icons-material/Close'
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
+import MenuIcon from '@mui/icons-material/Menu'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import MailIcon from '@mui/icons-material/Mail'
+import YouTubeIcon from '@mui/icons-material/YouTube'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import logo from './assets/CALOGO.png'
 import './navbar.css'
 
 const Navbar = () => {
-  const [open, setOpen] = React.useState(false)
+  const [open, setOpen] = useState(false)
+  const [showServicesDropdown, setShowServicesDropdown] = useState(false)
+  const [showInsightsDropdown, setShowInsightsDropdown] = useState(false)
   const theme = useTheme()
   const navigate = useNavigate()
 
@@ -33,9 +41,6 @@ const Navbar = () => {
   const handleDrawerClose = () => {
     setOpen(false)
   }
-
-  const [showServicesDropdown, setShowServicesDropdown] = useState(false)
-  const [showInsightsDropdown, setShowInsightsDropdown] = useState(false)
 
   const toggleServicesDropdown = () => {
     setShowServicesDropdown((prev) => !prev)
@@ -318,110 +323,155 @@ const Navbar = () => {
 
   return (
     <div className='nav'>
-      <img src={logo} alt='logo' className='nav-logo' />
-      <div className='nav-cont'>
-        <button className='nav-title' onClick={() => navigate('/')}>
-          Home
-        </button>
-        <button className='nav-title' onClick={toggleServicesDropdown}>
-          <span style={{ display: 'flex', alignItems: 'flex-end' }}>
-            Services
-            {showServicesDropdown ? (
-              <KeyboardArrowUpIcon sx={{ paddingLeft: '2px' }} />
-            ) : (
-              <KeyboardArrowDownIcon sx={{ paddingLeft: '2px' }} />
-            )}
-          </span>
-        </button>
-        {showServicesDropdown && (
-          <div className='dropdownService'>
-            <button
-              className='dropdown-item'
-              onClick={() => navigate('/services/legal')}
-            >
-              Consultation
-            </button>
-            <button
-              className='dropdown-item'
-              onClick={() => navigate('/services/investor')}
-            >
-              Business Strategist
-            </button>
-            <button
-              className='dropdown-item'
-              onClick={() => navigate('/services/ca')}
-            >
-              Advisory
-            </button>
-            <button
-              className='dropdown-item'
-              onClick={() => navigate('/services/startup')}
-            >
-              Startup
-            </button>
-          </div>
-        )}
-        <button className='nav-title' onClick={toggleInsightsDropdown}>
-          <span style={{ display: 'flex', alignItems: 'flex-end' }}>
-            Insights
-            {showInsightsDropdown ? (
-              <KeyboardArrowUpIcon sx={{ paddingLeft: '2px' }} />
-            ) : (
-              <KeyboardArrowDownIcon sx={{ paddingLeft: '2px' }} />
-            )}
-          </span>
-        </button>
-        {showInsightsDropdown && (
-          <div className='dropdownInsights'>
-            <button
-              className='dropdown-item'
-              onClick={() => navigate('/insights/apple')}
-            >
-              Apple
-            </button>
-            <button
-              className='dropdown-item'
-              onClick={() => navigate('/insights/ball')}
-            >
-              Ball
-            </button>
-            <button
-              className='dropdown-item'
-              onClick={() => navigate('/insights/cat')}
-            >
-              Cat
-            </button>
-            <button
-              className='dropdown-item'
-              onClick={() => navigate('/insights/dog')}
-            >
-              Dog
-            </button>
-          </div>
-        )}
-        <button className='nav-title' onClick={() => navigate('/career')}>
-          Career
-        </button>
-        <button className='nav-title' onClick={() => navigate('/gallary')}>
-          Gallary
-        </button>
-        <button className='nav-title' onClick={() => navigate('/contact')}>
-          Contact
-        </button>
+      <div className='nav-left'>
+        <img src={logo} alt='logo' className='nav-logo' />
       </div>
-      <div className='menu'>
-        <Button onClick={toggleDrawer(true)}>
-          <MenuIcon sx={{ color: 'black', fontSize: '3rem' }} />
-        </Button>
+      <div className='nav-right'>
+        <div className='nav-icons'>
+          <IconButton
+            href='https://www.facebook.com'
+            target='_blank'
+            aria-label='Facebook'
+            sx={{ color: 'black' }}
+          >
+            <FacebookIcon />
+          </IconButton>
+          <IconButton
+            href='https://www.linkedin.com'
+            target='_blank'
+            aria-label='LinkedIn'
+            sx={{ color: 'black' }}
+          >
+            <LinkedInIcon />
+          </IconButton>
+          <IconButton
+            href='https://www.instagram.com'
+            target='_blank'
+            aria-label='Instagram'
+            sx={{ color: 'black' }}
+          >
+            <InstagramIcon />
+          </IconButton>
+          <IconButton
+            href='https://www.youtube.com'
+            target='_blank'
+            aria-label='YouTube'
+            sx={{ color: 'black' }}
+          >
+            <YouTubeIcon />
+          </IconButton>
+          <IconButton
+            href='mailto:info@example.com'
+            aria-label='Email'
+            sx={{ color: 'black' }}
+          >
+            <MailIcon />
+          </IconButton>
+        </div>
+        <div className='nav-cont'>
+          <button className='nav-title' onClick={() => navigate('/')}>
+            Home
+          </button>
+          <button className='nav-title' onClick={toggleServicesDropdown}>
+            <span className='ser' style={{ display: 'flex', alignItems: 'flex-end' }}>
+              Services
+              {showServicesDropdown ? (
+                <KeyboardArrowUpIcon sx={{ paddingLeft: '2px' }} />
+              ) : (
+                <KeyboardArrowDownIcon sx={{ paddingLeft: '2px' }} />
+              )}
+            </span>
+          </button>
+          {showServicesDropdown && (
+            <div className='dropdownService'>
+              <button
+                className='dropdown-item'
+                onClick={() => navigate('/services/legal')}
+              >
+                Consultation
+              </button>
+              <button
+                className='dropdown-item'
+                onClick={() => navigate('/services/investor')}
+              >
+                Business Strategist
+              </button>
+              <button
+                className='dropdown-item'
+                onClick={() => navigate('/services/ca')}
+              >
+                Advisory
+              </button>
+              <button
+                className='dropdown-item'
+                onClick={() => navigate('/services/startup')}
+              >
+                Startup
+              </button>
+            </div>
+          )}
+          <button className='nav-title' onClick={toggleInsightsDropdown}>
+            <span className='ins' style={{ display: 'flex', alignItems: 'flex-end' }}>
+              Insights
+              {showInsightsDropdown ? (
+                <KeyboardArrowUpIcon sx={{ paddingLeft: '2px' }} />
+              ) : (
+                <KeyboardArrowDownIcon sx={{ paddingLeft: '2px' }} />
+              )}
+            </span>
+          </button>
+          {showInsightsDropdown && (
+            <div className='dropdownInsights'>
+              <button
+                className='dropdown-item'
+                onClick={() => navigate('/insights/apple')}
+              >
+                Apple
+              </button>
+              <button
+                className='dropdown-item'
+                onClick={() => navigate('/insights/ball')}
+              >
+                Ball
+              </button>
+              <button
+                className='dropdown-item'
+                onClick={() => navigate('/insights/cat')}
+              >
+                Cat
+              </button>
+              <button
+                className='dropdown-item'
+                onClick={() => navigate('/insights/dog')}
+              >
+                Dog
+              </button>
+            </div>
+          )}
+          <button className='nav-title' onClick={() => navigate('/career')}>
+            Career
+          </button>
+          <button className='nav-title' onClick={() => navigate('/gallary')}>
+            Gallary
+          </button>
+          <button className='nav-title' onClick={() => navigate('/contact')}>
+            Contact
+          </button>
+        </div>
+        <div className='menu'>
+          <Button onClick={toggleDrawer(true)}>
+            <MenuIcon sx={{ color: 'black', fontSize: '3rem' }} />
+          </Button>
+        </div>
+        <Drawer
+          sx={{ marginTop: '4rem', height: `calc(100% - 4rem)` }}
+          anchor='right'
+          open={open}
+          onClose={toggleDrawer(false)}
+        >
+          {DrawerList}
+        </Drawer>
       </div>
-      <Drawer
-        sx={{ marginTop: '4rem', height: `calc(100% - 4rem)` }}
-        anchor='right'
-        open={open}
-        onClose={toggleDrawer(false)}
-      >
-        {DrawerList}
-      </Drawer>
     </div>
   )
 }

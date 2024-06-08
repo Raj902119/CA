@@ -5,8 +5,8 @@ import ImgSlider from '../component/ui/ImgSlider'
 function Home() {
   return (
     <>
-      <ImgSlider />
-      <Cards />
+      {/* <ImgSlider />
+      <Cards /> */}
     </>
   )
 }

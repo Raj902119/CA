@@ -1,105 +1,153 @@
-.container {
- padding-left: 3rem;
- padding-right: 3rem;
- background-color: #e8eaf6;
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 .nav {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
- height: 4rem;
- position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: transparent;
+  position: relative;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .nav-logo {
- height: 90px;
- width: 300px;
+  height: 90px;
+  width: 300px;
+}
+
+.nav-icons {
+  display: flex;
+  margin-left: 20px;
+  justify-content: flex-end;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .nav-cont {
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- gap: 1.3rem;
- height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  height: 2.5rem;
 }
 
 .nav-title {
- border: none;
- background-color: transparent;
- font-size: 1.2rem;
- font-weight: 500;
- margin-right: 3px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-right: 3px;
 }
+
 
 .dropdownService {
- position: absolute;
- top: 100%;
- /* Position below the button */
- left: 70%;
- background-color: white;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- z-index: 1;
- display: flex;
- flex-direction: column;
-}
-
-.dropdownInsights {
- position: absolute;
- top: 100%;
- /* Position below the button */
- left: 80%;
- background-color: white;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- z-index: 1;
- display: flex;
- flex-direction: column;
-}
-
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    width: 40vw; /* Set width to full viewport width */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .dropdownInsights {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    width: 40vw; /* Set width to full viewport width */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
 .dropdown-item {
- padding: 10px 20px;
- font-size: 1rem;
- border: none;
- background-color: transparent;
- text-align: left;
- cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: transparent;
+  text-align: left;
+  cursor: pointer;
 }
 
 .dropdown-item:hover {
- background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .menu {
- display: none;
- margin-bottom: 40px;
- height: 20px;
-}
-
-@media only screen and (max-width: 1105px) {
- .menu {
-  display: block;
- }
-
- .nav-cont {
   display: none;
- }
-
- .nav {
-  justify-content: space-around;
- }
-
- .nav-logo {
-  height: 80px;
-  width: 250px;
- }
 }
 
-@media only screen and (max-width: 500px) {
- .nav-logo {
-  height: 60px;
-  width: 200px;
- }
+@media only screen and (max-width: 950px) {
+    .nav{
+        gap: 0.5rem;
+    }
+  .nav-cont{
+    gap: 0.5rem;
+  }
+  .nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
+@media only screen and (max-width: 800px) {
+    .nav-title {
+        border: none;
+        background-color: transparent;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-right: 3px;
+      }
+}
+
+@media only screen and (max-width: 525px) {
+  .nav-icons{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+   .nav-cont {
+    display: none;
+  }
+  .nav-right {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-left {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-logo {
+    height: 60px;
+    width: 200px;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+
