@@ -33,7 +33,7 @@ function App() {
         <Route path='/award' element={<Award />} />
         <Route path='/cards' element={<Cards />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/careers' element={<Careers />}/>
+        <Route path='/career' element={<Careers />} />
         {/* Service */}
         <Route path='/services' element={<Services />} />
         <Route path='/services/ca' element={<CAFirm />} />

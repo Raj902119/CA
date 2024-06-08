@@ -1,16 +1,16 @@
-import React from 'react';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
+import React from 'react'
+import Card from '@mui/material/Card'
+import CardMedia from '@mui/material/CardMedia'
+import CardContent from '@mui/material/CardContent'
+import Typography from '@mui/material/Typography'
+import Button from '@mui/material/Button'
+import Grid from '@mui/material/Grid'
 
 // Import your images
-import card1 from '../images/istockphoto-1180187740-612x612.jpg';
-import card2 from '../images/istockphoto-1181250359-612x612.jpg';
-import card3 from '../images/istockphoto-499517325-612x612.jpg';
-import card4 from '../images/istockphoto-1455167765-612x612.jpg';
+import card1 from '../images/istockphoto-1180187740-612x612.jpg'
+import card2 from '../images/istockphoto-1181250359-612x612.jpg'
+import card3 from '../images/istockphoto-499517325-612x612.jpg'
+import card4 from '../images/istockphoto-1455167765-612x612.jpg'
 
 // CSS styles
 const styles = {
@@ -49,23 +49,28 @@ const styles = {
     fontWeight: 'bold',
     boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',
     borderRadius: '1rem',
-    paddingX: "1.4rem"
+    paddingX: '1.4rem',
   },
-};
+}
 
 function Cards() {
-  const [hoverCard, setHoverCard] = React.useState(null);
+  const [hoverCard, setHoverCard] = React.useState(null)
 
   const handleMouseEnter = (index) => {
-    setHoverCard(index);
-  };
+    setHoverCard(index)
+  }
 
   const handleMouseLeave = () => {
-    setHoverCard(null);
-  };
+    setHoverCard(null)
+  }
 
   return (
-    <Grid container spacing={3} justifyContent="center" style={{ marginTop: '2rem', padding: "2rem" }}>
+    <Grid
+      container
+      spacing={3}
+      justifyContent='center'
+      style={{ marginTop: '2rem', padding: '2rem' }}
+    >
       {[card1, card2, card3, card4].map((card, index) => (
         <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
           <Card
@@ -76,12 +81,21 @@ function Cards() {
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            <CardMedia style={styles.cardMedia} image={card} title="Card image" />
+            <CardMedia
+              style={styles.cardMedia}
+              image={card}
+              title='Card image'
+            />
             <CardContent style={styles.cardContent}>
-              <Typography variant="h5" component="h2" gutterBottom style={styles.cardTitle}>
+              <Typography
+                variant='h5'
+                component='h2'
+                gutterBottom
+                style={styles.cardTitle}
+              >
                 Card title
               </Typography>
-              <Button variant="outlined" style={styles.cardButton}>
+              <Button variant='outlined' style={styles.cardButton}>
                 Primary
               </Button>
             </CardContent>
@@ -89,7 +103,7 @@ function Cards() {
         </Grid>
       ))}
     </Grid>
-  );
+  )
 }
 
-export default Cards;
+export default Cards

@@ -1,9 +1,16 @@
-import React from 'react';
-import '../CafirmServices/CaFirmService.css';
+import React from 'react'
+import '../CafirmServices/CaFirmService.css'
+import logo from './investor.jpg'
+import Banner from '../../../component/ui/Banner'
 
 function InvestorService() {
   return (
     <>
+      <Banner
+        imageUrl={logo}
+        breadcrumb='Home > Regulatory & Advisory Services'
+        headline='Regulatory & Advisory Services'
+      />
       <section className='services'>
         <h2>Investor Services</h2>
         <div className='service-list'>
@@ -25,8 +32,8 @@ function InvestorService() {
             <div className='service-item'>
               <h3>Risk Assessment</h3>
               <p>
-                Our risk assessment services identify potential risks and provide
-                solutions to mitigate them effectively.
+                Our risk assessment services identify potential risks and
+                provide solutions to mitigate them effectively.
               </p>
             </div>
           </div>
@@ -48,15 +55,15 @@ function InvestorService() {
             <div className='service-item'>
               <h3>Estate Planning</h3>
               <p>
-                We offer estate planning services to help you manage and transfer
-                your wealth efficiently.
+                We offer estate planning services to help you manage and
+                transfer your wealth efficiently.
               </p>
             </div>
           </div>
         </div>
       </section>
     </>
-  );
+  )
 }
 
-export default InvestorService;
+export default InvestorService

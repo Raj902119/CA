@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import SimpleImageSlider from 'react-simple-image-slider'
 import './ImgSlider.css' // Import the CSS file for styling
 
@@ -6,45 +6,37 @@ const images = [
   {
     url: 'assets/img5.jpeg',
     header: 'Team Building Workshop',
-    text: 'Team Building Workshop',
+    text: 'Enhance teamwork and collaboration with fun activities.',
   },
   {
     url: 'assets/img4.jpeg',
     header: 'Leadership Conference',
-    text: 'Team Building Workshop',
+    text: 'Empower leaders with insights and strategies for success.',
   },
   {
     url: 'assets/img5.jpeg',
     header: 'Office Retreat',
-    text: 'Team Building Workshop',
+    text: 'Relax and recharge with your colleagues in a serene environment.',
   },
   {
     url: 'assets/img4.jpeg',
     header: 'Employee Recognition Ceremony',
-    text: 'Team Building Workshop',
+    text: 'Celebrate the achievements and contributions of our team.',
   },
   {
     url: 'assets/img5.jpeg',
     header: 'Team Building Activity',
-    text: 'Team Building Workshop',
+    text: 'Participate in engaging exercises to strengthen team bonds.',
   },
   {
     url: 'assets/img4.jpeg',
     header: 'Leadership Training',
-    text: 'Team Building Workshop',
+    text: 'Develop essential leadership skills for personal and professional growth.',
   },
 ]
 
 export const ImgSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }, 3200) // Change slide every 5 seconds
-
-    return () => clearInterval(interval) // Cleanup interval on component unmount
-  }, [])
 
   const onSlideChange = (index) => {
     if (index >= 0 && index < images.length) {
@@ -60,8 +52,8 @@ export const ImgSlider = () => {
         images={images}
         showBullets={true}
         showNavs={true}
-        startIndex={currentIndex}
         onStartSlide={onSlideChange}
+        autoPlay={true}
       />
       <div className='text-overlay drop-shadow-lg'>
         <h1 className='drop-shadow-lg'>{images[currentIndex].header}</h1>
