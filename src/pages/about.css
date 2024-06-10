@@ -1,0 +1,44 @@
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.about h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.about h3{
+    font-size: 25px;
+    margin-bottom: 7px;
+    font-weight: 300;
+}
+.about span{
+    color: orange;
+}
+.about p{
+    color: rgb(80, 74, 74);
+    font-size: 17px;
+}
+.about .para{
+    width: 100%;
+}
+@media screen and (min-width: 768px){
+    .about{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 50px 130px 30px 130px;
+    }
+    .about .para{
+        width: 53%;
+    }
+    .about .aimg{
+        width: 30%;
+        margin-left: 110px;
+    
+    }
+    .about img{
+        height: 40vh;
+        align-self: flex-end;
+    }
+}
