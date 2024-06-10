@@ -126,9 +126,9 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
-              onClick={() => navigate('/business-strategist')}
+              onClick={() => navigate('/services/ca')}
             >
-              <ListItemText primary='Business Strategist' />
+              <ListItemText primary='Taxation' />
             </ListItemButton>
             <ListItemButton
               sx={{
@@ -138,7 +138,7 @@ const Navbar = () => {
               }}
               onClick={() => navigate('/advisory')}
             >
-              <ListItemText primary='Advisory' />
+              <ListItemText primary='Bussiness Registration' />
             </ListItemButton>
             <ListItemButton
               sx={{
@@ -148,7 +148,7 @@ const Navbar = () => {
               }}
               onClick={() => navigate('/startup-funding')}
             >
-              <ListItemText primary='Startup Funding' />
+              <ListItemText primary='Company Formation' />
             </ListItemButton>
             <ListItemButton
               sx={{
@@ -158,7 +158,27 @@ const Navbar = () => {
               }}
               onClick={() => navigate('/consultation')}
             >
-              <ListItemText primary='Consultation' />
+              <ListItemText primary='Auditing' />
+            </ListItemButton>
+            <ListItemButton
+              sx={{
+                justifyContent: 'center',
+                textAlign: 'center',
+                width: '100%',
+              }}
+              onClick={() => navigate('/consultation')}
+            >
+              <ListItemText primary='Compliance' />
+            </ListItemButton>
+            <ListItemButton
+              sx={{
+                justifyContent: 'center',
+                textAlign: 'center',
+                width: '100%',
+              }}
+              onClick={() => navigate('/consultation')}
+            >
+              <ListItemText primary='Drafting' />
             </ListItemButton>
           </List>
         </Collapse>
@@ -386,27 +406,39 @@ const Navbar = () => {
             <div className='dropdownService'>
               <button
                 className='dropdown-item'
-                onClick={() => navigate('/services/legal')}
+                onClick={() => navigate('/services/ca')}
               >
-                Consultation
+                Taxation
               </button>
               <button
                 className='dropdown-item'
                 onClick={() => navigate('/services/investor')}
               >
-                Business Strategist
+                Business Registration
               </button>
               <button
                 className='dropdown-item'
                 onClick={() => navigate('/services/ca')}
               >
-                Advisory
+                Company Formation
               </button>
               <button
                 className='dropdown-item'
                 onClick={() => navigate('/services/startup')}
               >
-                Startup
+                Auditing
+              </button>
+              <button
+                className='dropdown-item'
+                onClick={() => navigate('/services/startup')}
+              >
+                Compliance
+              </button>
+              <button
+                className='dropdown-item'
+                onClick={() => navigate('/services/startup')}
+              >
+                Drafting
               </button>
             </div>
           )}

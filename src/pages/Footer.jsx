@@ -1,109 +1,197 @@
-import { Box, Container, Grid, Typography } from '@mui/material';
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from "../assets/CALOGO.png";
+import React from "react";
+import {
+  Box,
+  Grid,
+  Typography,
+  TextField,
+  Button,
+  IconButton,
+  Container,
+  styled,
+} from "@mui/material";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import CallIcon from "@mui/icons-material/Call";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import { Link } from "react-router-dom";
+
+const iconColor = "#686D76";
+
+const RootBox = styled(Box)(({ theme }) => ({
+  backgroundColor: "#31363F",
+  color: iconColor,
+  padding: theme.spacing(4),
+}));
+
+const HeadingTypography = styled(Typography)(({ theme }) => ({
+  fontWeight: 600,
+  color: "white",
+  marginBottom: theme.spacing(2),
+}));
+
+const ContactItemBox = styled(Box)(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  marginBottom: theme.spacing(1),
+}));
+
+const IconButtonStyled = styled(IconButton)(({ theme }) => ({
+  marginRight: theme.spacing(1),
+  color: iconColor,
+}));
+
+const FormStyled = styled("form")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+}));
+
+const InputStyled = styled(TextField)(({ theme }) => ({
+  marginBottom: theme.spacing(2),
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": {
+      borderColor: iconColor,
+    },
+    "&:hover fieldset": {
+      borderColor: iconColor,
+    },
+    "&.Mui-focused fieldset": {
+      borderColor: iconColor,
+    },
+  },
+  "& .MuiInputBase-input": {
+    color: iconColor,
+  },
+  "& .MuiInputLabel-outlined": {
+    color: iconColor,
+  },
+  "& .MuiInputLabel-outlined.Mui-focused": {
+    color: iconColor,
+  },
+}));
+
+const MapImage = styled("img")(({ theme }) => ({
+  width: "100%",
+  maxWidth: 400,
+}));
+
+const CustomButton = styled(Button)(({ theme }) => ({
+  color: iconColor,
+  borderColor: iconColor,
+  marginBottom: theme.spacing(1),
+  "&:hover": {
+    borderColor: iconColor,
+  },
+}));
 
 const Footer = () => {
   return (
-    <Box component="footer" bgcolor="white" aria-labelledby="footer-heading" py={{ xs: 4, sm: 6, lg: 8 }} px={{ xs: 3, lg: 4 }}>
+    <RootBox>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
-          <Grid item xs={12} md={4}>
-          <Box display="flex" flexDirection="column" alignItems="center">
-              <img src={logo} alt='logo' className='nav-logo' />
-              <Typography variant="body2" color="textSecondary" mt={2} align="center">
-              We offer a number of solutions to meet the needs of our clients such as Bussiness Strategy, Startup Funding and next generation businesses.
-              </Typography>
+          <Grid item xs={12} sm={6} md={3}>
+            <HeadingTypography variant="h6">CONTACT US</HeadingTypography>
+            <Box>
+              <ContactItemBox>
+                <IconButtonStyled>
+                  <LocationOnIcon />
+                </IconButtonStyled>
+                <Typography>
+                  2nd Floor, Shree Krishna, 7, Opp Kiosk Koffee, Shirole Road,
+                  off Fergusson College Road, Pune, Maharashtra 411004
+                </Typography>
+              </ContactItemBox>
+              <ContactItemBox>
+                <IconButtonStyled>
+                  <CallIcon />
+                </IconButtonStyled>
+                <Typography>+91 70200 45454</Typography>
+              </ContactItemBox>
+              <ContactItemBox>
+                <IconButtonStyled>
+                  <TwitterIcon />
+                </IconButtonStyled>
+                <Typography>Twitter</Typography>
+              </ContactItemBox>
+              <ContactItemBox>
+                <IconButtonStyled>
+                  <FacebookIcon />
+                </IconButtonStyled>
+                <Typography>Facebook</Typography>
+              </ContactItemBox>
+              <ContactItemBox>
+                <IconButtonStyled>
+                  <LinkedInIcon />
+                </IconButtonStyled>
+                <Typography>LinkedIn</Typography>
+              </ContactItemBox>
+              <ContactItemBox>
+                <IconButtonStyled>
+                  <YouTubeIcon />
+                </IconButtonStyled>
+                <Typography>YouTube</Typography>
+              </ContactItemBox>
             </Box>
           </Grid>
-          <Grid item xs={12} md={8}>
-            <Grid container spacing={4}>
-              <Grid item xs={6} md={3}>
-                <Typography variant="subtitle1" color="primary">
-                  Solutions
-                </Typography>
-                <Box mt={2}>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Marketing</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Analytics</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Commerce</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Insights</Link>
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid item xs={6} md={3}>
-                <Typography variant="subtitle1" color="primary">
-                  Support
-                </Typography>
-                <Box mt={2}>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Pricing</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Documentation</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Guides</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">API Status</Link>
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid item xs={6} md={3}>
-                <Typography variant="subtitle1" color="primary">
-                  Company
-                </Typography>
-                <Box mt={2}>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">About</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Blog</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Jobs</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Press</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Partners</Link>
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid item xs={6} md={3}>
-                <Typography variant="subtitle1" color="primary">
-                  Legal
-                </Typography>
-                <Box mt={2}>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Claim</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Privacy</Link>
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" display="block" gutterBottom>
-                    <Link to="#">Terms</Link>
-                  </Typography>
-                </Box>
-              </Grid>
-            </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <HeadingTypography variant="h6">LINKS</HeadingTypography>
+            <Box>
+              <CustomButton variant="outlined" fullWidth>
+                Bussiness Registration
+              </CustomButton>
+              <CustomButton variant="outlined" fullWidth>
+                Company Formation
+              </CustomButton>
+              <CustomButton variant="outlined" fullWidth>
+                Audit &amp; Assurance
+              </CustomButton>
+              <CustomButton variant="outlined" fullWidth>
+                Taxation
+              </CustomButton>
+              <CustomButton variant="outlined" fullWidth>
+                Corporate Laws
+              </CustomButton>
+              <CustomButton variant="outlined" fullWidth>
+                Consultancy
+              </CustomButton>
+              <CustomButton variant="outlined" fullWidth>
+                NRI Tax and Allied Services
+              </CustomButton>
+              <CustomButton variant="outlined" fullWidth>
+                About Us
+              </CustomButton>
+              <CustomButton variant="outlined" fullWidth>
+                Careers
+              </CustomButton>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <HeadingTypography variant="h6">GET IN TOUCH</HeadingTypography>
+            <FormStyled>
+              <InputStyled label="Name" variant="outlined" />
+              <InputStyled label="Phone" variant="outlined" type="tel" />
+              <InputStyled label="Email" variant="outlined" type="email" />
+              <InputStyled
+                label="Message"
+                variant="outlined"
+                multiline
+                rows={4}
+              />
+              <Button variant="contained" type="submit" sx={{ backgroundColor: iconColor }}>
+                Submit
+              </Button>
+            </FormStyled>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <HeadingTypography variant="h6">MAP LOCATION</HeadingTypography>
+            <Link to={"https://maps.app.goo.gl/3LnJDgNw6Y72QRco8"} >
+            <MapImage src="../../public/assets/map.png" alt="Map" />
+            </Link>
           </Grid>
         </Grid>
-        <Box mt={6} pt={3} borderTop={1} borderColor="divider">
-          <Typography variant="caption" color="textSecondary">
-            &copy; 2024 CA Dhiraj Ostwal, Inc. All rights reserved.
-          </Typography>
-        </Box>
       </Container>
-    </Box>
+    </RootBox>
   );
 };
 

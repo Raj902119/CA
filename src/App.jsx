@@ -22,7 +22,7 @@ import Footer from './pages/Footer'
 import Careers from './pages/Careers.jsx'
 import Award from './pages/Award.jsx'
 
-//
+
 function App() {
   return (
     <>

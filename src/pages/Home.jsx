@@ -6,9 +6,6 @@ import Award from './Award'
 function Home() {
   return (
     <>
-      <ImgSlider />
-      <Award />
-      <Cards />
     </>
   )
 }
