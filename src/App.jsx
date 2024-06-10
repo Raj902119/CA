@@ -21,6 +21,8 @@ import Navbar from './component/ui/Navbar'
 import Footer from './pages/Footer'
 import Careers from './pages/Careers.jsx'
 import Award from './pages/Award.jsx'
+import About from './pages/About.jsx'
+import Employee from './pages/Employee.jsx'
 
 //
 function App() {
@@ -34,6 +36,8 @@ function App() {
         <Route path='/cards' element={<Cards />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/career' element={<Careers />} />
+        <Route path='/about' element={<About/>}/>
+        <Route path='/employee' element={<Employee/>}/>
         {/* Service */}
         <Route path='/services' element={<Services />} />
         <Route path='/services/ca' element={<CAFirm />} />
