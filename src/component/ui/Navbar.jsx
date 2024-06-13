@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import ServiceData from '../../pages/services/ServiceData'
 import {
   Box,
   Button,
@@ -12,7 +13,6 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
-  Typography,
 } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import CloseIcon from '@mui/icons-material/Close'
@@ -28,11 +28,12 @@ import logo from './assets/CALOGO.png'
 import './navbar.css'
 
 const Navbar = () => {
+  const navigate = useNavigate()
+
   const [open, setOpen] = useState(false)
   const [showServicesDropdown, setShowServicesDropdown] = useState(false)
   const [showInsightsDropdown, setShowInsightsDropdown] = useState(false)
   const theme = useTheme()
-  const navigate = useNavigate()
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen)
@@ -120,66 +121,19 @@ const Navbar = () => {
         </ListItem>
         <Collapse in={openServices} timeout='auto' unmountOnExit>
           <List component='div' disablePadding>
-            <ListItemButton
-              sx={{
-                justifyContent: 'center',
-                textAlign: 'center',
-                width: '100%',
-              }}
-              onClick={() => navigate('/services/ca')}
-            >
-              <ListItemText primary='Taxation' />
-            </ListItemButton>
-            <ListItemButton
-              sx={{
-                justifyContent: 'center',
-                textAlign: 'center',
-                width: '100%',
-              }}
-              onClick={() => navigate('/advisory')}
-            >
-              <ListItemText primary='Bussiness Registration' />
-            </ListItemButton>
-            <ListItemButton
-              sx={{
-                justifyContent: 'center',
-                textAlign: 'center',
-                width: '100%',
-              }}
-              onClick={() => navigate('/startup-funding')}
-            >
-              <ListItemText primary='Company Formation' />
-            </ListItemButton>
-            <ListItemButton
-              sx={{
-                justifyContent: 'center',
-                textAlign: 'center',
-                width: '100%',
-              }}
-              onClick={() => navigate('/consultation')}
-            >
-              <ListItemText primary='Auditing' />
-            </ListItemButton>
-            <ListItemButton
-              sx={{
-                justifyContent: 'center',
-                textAlign: 'center',
-                width: '100%',
-              }}
-              onClick={() => navigate('/consultation')}
-            >
-              <ListItemText primary='Compliance' />
-            </ListItemButton>
-            <ListItemButton
-              sx={{
-                justifyContent: 'center',
-                textAlign: 'center',
-                width: '100%',
-              }}
-              onClick={() => navigate('/consultation')}
-            >
-              <ListItemText primary='Drafting' />
-            </ListItemButton>
+            {Object.keys(ServiceData).map((serviceName, index) => (
+              <ListItemButton
+                key={index}
+                sx={{
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                  width: '100%',
+                }}
+                onClick={() => navigate(`/services/${serviceName}`)}
+              >
+                <ListItemText primary={ServiceData[serviceName].headline} />
+              </ListItemButton>
+            ))}
           </List>
         </Collapse>
         <Divider />
@@ -393,7 +347,10 @@ const Navbar = () => {
             Home
           </button>
           <button className='nav-title' onClick={toggleServicesDropdown}>
-            <span className='ser' style={{ display: 'flex', alignItems: 'flex-end' }}>
+            <span
+              className='ser'
+              style={{ display: 'flex', alignItems: 'flex-end' }}
+            >
               Services
               {showServicesDropdown ? (
                 <KeyboardArrowUpIcon sx={{ paddingLeft: '2px' }} />
@@ -404,46 +361,22 @@ const Navbar = () => {
           </button>
           {showServicesDropdown && (
             <div className='dropdownService'>
-              <button
-                className='dropdown-item'
-                onClick={() => navigate('/services/ca')}
-              >
-                Taxation
-              </button>
-              <button
-                className='dropdown-item'
-                onClick={() => navigate('/services/investor')}
-              >
-                Business Registration
-              </button>
-              <button
-                className='dropdown-item'
-                onClick={() => navigate('/services/ca')}
-              >
-                Company Formation
-              </button>
-              <button
-                className='dropdown-item'
-                onClick={() => navigate('/services/startup')}
-              >
-                Auditing
-              </button>
-              <button
-                className='dropdown-item'
-                onClick={() => navigate('/services/startup')}
-              >
-                Compliance
-              </button>
-              <button
-                className='dropdown-item'
-                onClick={() => navigate('/services/startup')}
-              >
-                Drafting
-              </button>
+              {Object.keys(ServiceData).map((serviceName, index) => (
+                <button
+                  key={index}
+                  className='dropdown-item'
+                  onClick={() => navigate(`/services/${serviceName}`)}
+                >
+                  {ServiceData[serviceName].headline}
+                </button>
+              ))}
             </div>
           )}
           <button className='nav-title' onClick={toggleInsightsDropdown}>
-            <span className='ins' style={{ display: 'flex', alignItems: 'flex-end' }}>
+            <span
+              className='ins'
+              style={{ display: 'flex', alignItems: 'flex-end' }}
+            >
               Insights
               {showInsightsDropdown ? (
                 <KeyboardArrowUpIcon sx={{ paddingLeft: '2px' }} />

@@ -1,0 +1,35 @@
+.news-section {
+    padding: 20px;
+}
+
+.news-section h2 {
+    color: #000;
+}
+
+.news-section h2 .theme_color {
+    color: #007bff; /* Or any theme color you prefer */
+}
+
+.news-section .header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auto-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.column, .column iframe {
+    flex: 1;
+    min-width: 300px; /* Ensure responsiveness */
+}
+
+@media (max-width: 768px) {
+    .column, .column iframe {
+        flex-basis: 100%;
+    }
+}

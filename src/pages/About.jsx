@@ -1,8 +1,10 @@
 import aboutimg from '../images/rajesh-pande.png'
 import './about.css'
+
 function About() {
     return (
         <>
+      
             <div className='about'>
                 <div className='para'>
                     <h2><span>WHO</span> WE ARE</h2>

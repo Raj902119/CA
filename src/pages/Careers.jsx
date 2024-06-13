@@ -8,7 +8,7 @@ function Careers() {
       <Banner
         imageUrl={Img}
         breadcrumb='Home > Carrer'
-        headline='Apply Frashers'
+        headline='careers'
       />{' '}
       {/* start career */}
       {/* <div className='careerbag'>

@@ -78,6 +78,23 @@
 /* start media quary */
 
 @media screen and (min-width: 768px){
+    .content-bot .form-control{
+        width: 100%;
+        padding: 10px 0px 10px 10px;
+        margin: 15px 0px 15px 0px ;
+        border-radius: 10px;
+    }
+    .content-bot{
+        width: 100%;
+    }
+   
+}
+.input-text{
+    display: none;
+    
+}
+
+@media screen and (min-width: 1440px){
     .ca-contact-form{
         background-color: #F4F4F4;
         padding: 30px;
@@ -105,4 +122,5 @@
         margin: 50px;
     }
 }
+
 /* end media quary */
