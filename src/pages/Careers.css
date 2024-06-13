@@ -109,56 +109,6 @@ h2 span {
 .input-label .input-text {
     margin-right: 10px;
 }
-
-<<<<<<< HEAD
-@media screen and (min-width: 768px){
-    .content-bot .form-control{
-        width: 100%;
-        padding: 10px 0px 10px 10px;
-        margin: 15px 0px 15px 0px ;
-        border-radius: 10px;
-    }
-    .content-bot{
-        width: 100%;
-    }
-   
-}
-.input-text{
-    display: none;
-    
-}
-
-@media screen and (min-width: 1440px){
-    .ca-contact-form{
-        background-color: #F4F4F4;
-        padding: 30px;
-        margin: 50px;
-        width: 35%;
-        height: 58vh;
-   
-    }
-    .content-bot .form-control{
-        width: 90%;
-        padding: 10px 0px 10px 0px;
-        margin: 15px 0px 15px 0px ;
-    }
-    .content-bot .ca-divider{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .content-bot .ca-divider textarea{
-        width: 100%;
-        height: 70%;
-        margin: 40px 0px 0px 0px;
-    }
-    .careers{
-        width: 50%;
-        margin: 50px;
-    }
-}
-
-/* end media quary */
-=======
 .form-submit {
     background-color: #007bff;
     color: #fff;
@@ -180,12 +130,9 @@ h2 span {
         flex-direction: column;
         padding: 1rem;
     }
-
-    .careers,
     .ca-contact-form {
         margin-bottom: 1rem;
         flex: 1 1 100%;
         max-width: 100%;
     }
 }
->>>>>>> 0790aa46b4603a2fb0c94cc3a10a269c561ba23a
