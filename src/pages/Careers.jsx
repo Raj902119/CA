@@ -5,15 +5,7 @@ import Banner from '../component/ui/Banner'
 function Careers() {
   return (
     <>
-      <Banner
-        imageUrl={Img}
-        breadcrumb='Home > Carrer'
-<<<<<<< HEAD
-        headline='careers'
-=======
-        headline='Apply Frasher'
->>>>>>> 0790aa46b4603a2fb0c94cc3a10a269c561ba23a
-      />{' '}
+      <Banner imageUrl={Img} breadcrumb='Home > Carrer' headline='careers' />{' '}
       {/* start career */}
       {/* <div className='careerbag'>
              <h2>
