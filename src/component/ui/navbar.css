@@ -57,30 +57,37 @@
 
 
 .dropdownService {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 5rem;
-    width: 40vw; /* Set width to full viewport width */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
-  
-  .dropdownInsights {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 5rem;
-    width: 40vw; /* Set width to full viewport width */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5rem;
+  width: 25vw;
+  /* Set width to full viewport width */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+}
+
+.dropdownInsights {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5rem;
+  width: 30vw;
+  /* Set width to full viewport width */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+}
+
 .dropdown-item {
   padding: 10px 20px;
   font-size: 1rem;
@@ -99,37 +106,41 @@
 }
 
 @media only screen and (max-width: 950px) {
-    .nav{
-        gap: 0.5rem;
-    }
-  .nav-cont{
+  .nav {
     gap: 0.5rem;
   }
+
+  .nav-cont {
+    gap: 0.5rem;
+  }
+
   .nav {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 }
+
 @media only screen and (max-width: 800px) {
-    .nav-title {
-        border: none;
-        background-color: transparent;
-        font-size: 1rem;
-        font-weight: 500;
-        margin-right: 3px;
-      }
+  .nav-title {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 3px;
+  }
 }
 
 @media only screen and (max-width: 525px) {
-  .nav-icons{
+  .nav-icons {
     display: none;
   }
 }
 
 @media only screen and (max-width: 760px) {
-   .nav-cont {
+  .nav-cont {
     display: none;
   }
+
   .nav-right {
     flex-direction: row;
     justify-content: center;
@@ -150,5 +161,3 @@
     display: block;
   }
 }
-
-
