@@ -8,7 +8,11 @@ function Careers() {
       <Banner
         imageUrl={Img}
         breadcrumb='Home > Carrer'
+<<<<<<< HEAD
         headline='careers'
+=======
+        headline='Apply Frasher'
+>>>>>>> 0790aa46b4603a2fb0c94cc3a10a269c561ba23a
       />{' '}
       {/* start career */}
       {/* <div className='careerbag'>
@@ -21,28 +25,20 @@ function Careers() {
         <div className='careers'>
           <h2>
             CAREER <span>OPPORTUNITIES</span>
-            <br />
-            <br />
           </h2>
           <p>
-            {' '}
-            <p>
-              We are proud of our company and the people who work here. Thanks
-              to them, as we set new standards for the real estate industry in
-              every project. Our people are the reason that CA Dhiraj Ostwal is
-              a leading real estate company committed to excel in custormer
-              satisfaction and construction quality. We are here to create
-              benchmarks in the real estate development of Pune.
-              <br />
-              <br />
-              Hence, we are on a constant lookout for work-driven, goal-oriented
-              people who, individually and collectively, can help us wield a
-              superior edge. We want to work with people who seek opportunities
-              and believe that they are the real explorers.
-            </p>
+            We are proud of our company and the people who work here. They help
+            us set new standards for the real estate industry. Our team ensures
+            customer satisfaction and construction quality, making us a leading
+            real estate company in Pune.
+            <br />
+            <br />
+            We seek work-driven, goal-oriented individuals who can help us
+            excel. If you are an explorer looking for opportunities, join us.
           </p>
-          <img src={career} alt='' className='img' />
+          <img src={career} alt='Career Opportunities' className='img' />
         </div>
+
         <div class='ca-contact-form'>
           <h3 class='ca-title'> APPLY ONLINE</h3>
           <div class='ca-divider'>

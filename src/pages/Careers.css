@@ -1,82 +1,116 @@
-/* .careerbag{
-    background-image:url(../images/career.jpg);
-    width: 100%;
-    height: 30vh;
-    background-position: center;
-    background-size: cover;
-}
-.careerbag h2{
- color: #f6f5f5;
- font-size: 30px;
- font-weight: bold;
- text-align:justify;
- padding: 9%;
-} */
-/* .careerbag p{
-    color: white;
-    font-size: 15px;
-    font-weight: 300;
-    
-} */
-.ca-contact-form{
-    background-color: #F3F3F3;
-    margin-top: 20px;
-    border-radius: 10px;
-    width: 100%;
-    height: 70vh;
-    padding: 5px;
-    box-shadow: 2px 3px 20px rgb(45, 46, 47)
-}
-.form-submit{
-    background-color: #efa00d;
-    padding: 10px;
-    border-radius: 30px;    
-}
-/* .form-control-sub{
+h2 {
+    font-size: 2.5rem;
+    color: #333;
     text-align: center;
-} */
-.content-bot{
-    overflow: hidden;
-    padding: 0px 20px 0px 20px;
+    margin-bottom: 1rem;
+}
+
+h2 span {
+    color: #007bff;
+}
+
+/* Careers Section */
+.content-bot {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
 }
-.content-bot h2{
-    font-size: 30px;
-    font-weight: bold;
-}
-.content-bot h3{
-    font-size: 20px;
-    font-weight: 600;
-}
-.content-bot .form-control{
-    width: 70%;
-    padding: 10px 0px 10px 10px;
-    margin: 15px 0px 15px 0px ;
+
+.careers {
+    flex: 1 1 60%;
+    padding: 2rem;
+    background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    max-width: 800px;
 }
 
-.content-bot .ca-divider{
-    display: flex;
+.careers p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
 }
-.content-bot .ca-divider textarea{
+
+.careers .img {
     width: 100%;
-    height: 70%;
-    margin: 40px 0px 0px 0px;
-    border-radius: 5px;
-}
-.careers span{
-    color: #efa00d;
-}
-.careers p{
-    color: rgb(80, 70, 70);
+    border-radius: 10px;
+    margin-top: 1rem;
 }
 
-.faicon{
+/* Contact Form */
+.ca-contact-form {
+    flex: 1 1 30%;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    max-height: 450px;
+    margin: 0 auto;
+}
+
+.ca-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form-group .faicon {
+    position: absolute;
+    left: 10px;
+    color: #007bff;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.ca-input-file {
+    display: none;
+}
+
+.input-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+}
+
+.input-label .input-text {
     margin-right: 10px;
 }
-/* start media quary */
 
+<<<<<<< HEAD
 @media screen and (min-width: 768px){
     .content-bot .form-control{
         width: 100%;
@@ -124,3 +158,34 @@
 }
 
 /* end media quary */
+=======
+.form-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content-bot {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .careers,
+    .ca-contact-form {
+        margin-bottom: 1rem;
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+>>>>>>> 0790aa46b4603a2fb0c94cc3a10a269c561ba23a
