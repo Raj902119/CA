@@ -1,8 +1,8 @@
-import egallary1 from '../images/Group2434.png'
-import egallary2 from '../images/Group2435.png'
-import egallary3 from '../images/Group2436.png'
-import egallary4 from '../images/Group2437.png'
-import egallary5 from '../images/Group2438.png'
+import egallary1 from '../images/evg1.png'
+import egallary2 from '../images/evg2.png'
+import egallary3 from '../images/evg3.png'
+import egallary4 from '../images/evg4.png'
+import egallary5 from '../images/evg5.png'
 import './Eventgallary.css'
 function Eventgallary() {
     return (

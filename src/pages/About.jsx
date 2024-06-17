@@ -4,7 +4,10 @@ import './about.css'
 function About() {
     return (
         <>
-      
+            <div className='abouthead'><h2><span>Ab</span>out
+
+            </h2>
+            </div>
             <div className='about'>
                 <div className='para'>
                     <h2><span>WHO</span> WE ARE</h2>

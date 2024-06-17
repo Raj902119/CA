@@ -95,7 +95,9 @@ function Achievements() {
                         <img src={img12} alt="" title="" className="imgo"/>
                         <h4> 2020 <br /> Assembled and conceived Youtube channel with 100+ videos and 1.1M views. </h4>
                     </div> */}
-
+ <button className='sbtn  hover:bg-blue-700 text-white font-bold py-3 px-5  mt-1 transition-opacity duration-500'>
+            Read More
+          </button>
                 </div>
             </div>
         </>

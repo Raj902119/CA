@@ -1,11 +1,11 @@
-import gallary1 from '../images/20230824_114421.jpg'
-import gallary2 from '../images/20230824_114316.jpg'
-import gallary3 from '../images/20230824_114437.jpg'
-import gallary4 from '../images/20230824_114421.jpg'
-import "./gallary.css"
-import React, { useState } from "react";
-import Img from '../images/carrer.jpg'
-import Banner from '../component/ui/Banner'
+// import gallary1 from '../images/'
+// import gallary2 from '../images/20230824_114316.jpg'
+// import gallary3 from '../images/20230824_114437.jpg'
+// import gallary4 from '../images/20230824_114421.jpg'
+// import "./gallary.css"
+// import React, { useState } from "react";
+// import Img from '../images/carrer.jpg'
+// import Banner from '../component/ui/Banner'
 // import React from 'react';     
 function Gallary() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ function Gallary() {
             </nav>Shape your Career with us</h2>
         </div> */}
      {/* <div className='hedding'> <h2>Gallary</h2></div> */}
-      <div className='gallary'> 
+      {/* <div className='gallary'> 
         <div className='gsub'>
           <img src={gallary1} alt=""/>
         </div>
@@ -54,7 +54,7 @@ function Gallary() {
                     <img src={gallary4} alt="Employee 6" className="dropdown-image" />
                 </div>
             )}
-        </div>
+        </div> */}
     </>
   )
 };

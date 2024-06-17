@@ -108,8 +108,7 @@ h2 span {
 
 .input-label .input-text {
     margin-right: 10px;
-}
-
+}   
 .form-submit {
     background-color: #007bff;
     color: #fff;
@@ -131,7 +130,6 @@ h2 span {
         flex-direction: column;
         padding: 1rem;
     }
-
     .ca-contact-form {
         margin-bottom: 1rem;
         flex: 1 1 100%;

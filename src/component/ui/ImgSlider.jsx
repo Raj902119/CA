@@ -4,12 +4,12 @@ import './ImgSlider.css' // Import the CSS file for styling
 
 const images = [
   {
-    url: 'assets/img5.jpeg',
+    url: 'assets/hero1 (1).jpg',
     header: 'Team Building Workshop',
     text: 'Enhance teamwork and collaboration with fun activities.',
   },
   {
-    url: 'assets/img4.jpeg',
+    url: 'assets/hero1 (2).jpg',
     header: 'Leadership Conference',
     text: 'Empower leaders with insights and strategies for success.',
   },
@@ -48,7 +48,7 @@ export const ImgSlider = () => {
     <div className='img-slider-container'>
       <SimpleImageSlider
         width={'100%'}
-        height={750}
+        height={680}
         images={images}
         showBullets={true}
         showNavs={true}
@@ -61,7 +61,7 @@ export const ImgSlider = () => {
           <p className='transition-opacity duration-500 drop-shadow-lg'>
             {images[currentIndex].text}
           </p>
-          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg mt-4 transition-opacity duration-500'>
+          <button className='sbtn  hover:bg-blue-700 text-white font-bold py-3 px-5  mt-1 transition-opacity duration-500'>
             Read More
           </button>
         </div>

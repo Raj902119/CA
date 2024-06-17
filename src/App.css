@@ -2,4 +2,15 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-
+/* #F64403 main color
+#EF6645 sub color
+black 
+gray
+white */
+:root{
+    --maincolor:#EF6645;
+    /* --font1:'Lobster', cursive;
+    --font2:'Righteous', cursive;
+    --bgcolor:#262626;
+    --bgcolor2:#212529; */
+  }
