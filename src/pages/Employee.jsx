@@ -62,7 +62,7 @@ function Employee() {
                 headline='Employee'
             /> */}
             <div className="emp">
-                <div className="emtext"> <h2><span>Emp</span>loyee</h2>
+                <div className="emtext"> <h2><span>Our </span>Team</h2>
                 </div>
                 <div className="slider">
                     <button onClick={prevSlide} className="slider-button">

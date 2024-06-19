@@ -7,10 +7,18 @@
 black 
 gray
 white */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
 :root{
     --maincolor:#EF6645;
-    /* --font1:'Lobster', cursive;
-    --font2:'Righteous', cursive;
-    --bgcolor:#262626;
-    --bgcolor2:#212529; */
+    --btncolor:#EF6645;
+    --fontcolor:orange;
+    /* --font1:'Lobster', cursive;#F3F3F3 */
+    /* --font2:'Righteous', cursive; */
+    --bgcolor:#F3F3F3; 
+    --bgcolor2:#212529;
   }

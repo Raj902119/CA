@@ -61,6 +61,8 @@ const CardSlider = () => {
   }
 
   return (
+    <>
+    <div className='youtebe'><h2><span>Our</span>Youtube channel</h2></div>
     <div className='slide-container'>
       <div
         className='slide-content'
@@ -101,6 +103,7 @@ const CardSlider = () => {
         &gt;
       </div>
     </div>
+    </>
   )
 }
 

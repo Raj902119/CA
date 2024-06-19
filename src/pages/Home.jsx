@@ -8,6 +8,7 @@ import Achievements from './Achievements'
 import About from './About'
 import Employee from './Employee'
 import Eventgallary from './Eventgallary'
+import Followcard from './Followcard'
 
 function Home() {
   return (
@@ -21,7 +22,7 @@ function Home() {
     <Award/>
     <Eventgallary/>
     <FollowUs/>
-
+    <Followcard/>
 
     </>
   )

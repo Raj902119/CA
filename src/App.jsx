@@ -16,6 +16,9 @@ import Careers from './pages/Careers.jsx'
 import Award from './pages/Award.jsx'
 import About from './pages/About.jsx'
 import Employee from './pages/Employee.jsx'
+import MainAchieve from './pages/MainAchieve.jsx'
+import Profile from './pages/Profile.jsx'
+import NewsBlogs from './pages/NewsBlogs.jsx'
 
 function App() {
   return (
@@ -24,12 +27,15 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/gallery' element={<Gallery />} />
-        <Route path='/award' element={<Award />} />
+        {/* <Route path='/award' element={<Award />} /> */}
         <Route path='/cards' element={<Cards />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/career' element={<Careers />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/employee' element={<Employee />} />
+        {/* <Route path='/about' element={<About />} /> */}
+        {/* <Route path='/employee' element={<Employee />} /> */}
+        <Route path='/mainachieve' element={<MainAchieve />}/>
+        <Route path='/profile' element={<Profile />}/>
+        <Route path='/newsblogs' element={<NewsBlogs />}/>
         {/* Service */}
         <Route path='/services/:serviceName' element={<ServicePage />} />
       </Routes>

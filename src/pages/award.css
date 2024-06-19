@@ -1,0 +1,8 @@
+.awordh h2{
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.awordh span{
+    color:var(--fontcolor);
+}

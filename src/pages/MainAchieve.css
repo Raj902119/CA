@@ -13,16 +13,16 @@
 .Association{
     margin: 40px 0px 20px 0px;
     padding: 10px 0px 20px 0px;
-    background-color: var(--bgcolor);
+    background-color: #F3F3F3;
 }
 .Association h2{
     text-align: center;
     font-size: 35px;
     font-weight: bold;
-  margin: 30px 0px 80px 0px ;
+  margin-top: 30px;
 }
 .Association h2 span{
-    color:var(--fontcolor);
+    color: var(--fontcolor);
 }
 .welcomeSection h2 {
     font-size: 40px;
@@ -99,9 +99,6 @@
         margin: auto;
         justify-content: center;
         
-    }
-    .Association h2{
-      margin: 30px 0px 10px 0px ;
     }
     .NewsBox {
         width: 22%;

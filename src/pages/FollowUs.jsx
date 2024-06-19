@@ -5,7 +5,7 @@ function FollowUs() {
             {/* Start our last post */}
             <section class="news-section">
         <div class="header">
-            <h2><span class="theme_color">Follow</span> Us</h2>
+            <h2 class="theme_color"><span >Fol</span>low Us</h2>
             <h3>Find here our latest Post.</h3>
         </div>
         <div class="auto-container">

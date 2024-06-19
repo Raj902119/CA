@@ -4,34 +4,34 @@ import './ImgSlider.css' // Import the CSS file for styling
 
 const images = [
   {
-    url: 'assets/hero1 (1).jpg',
+    url: 'assets/hero1.jpg',
     header: 'Team Building Workshop',
-    text: 'Enhance teamwork and collaboration with fun activities.',
+    text: '"Enhance teamwork and collaboration with fun activities".',
   },
   {
-    url: 'assets/hero1 (2).jpg',
-    header: 'Leadership Conference',
-    text: 'Empower leaders with insights and strategies for success.',
+    url: 'assets/hero2.jpg',
+    header: '"Leadership Conference"',
+    text: '"Empower leaders with insights and strategies for success".',
+  },
+  {
+    url: 'assets/hero4.jpg',
+    header: '"Office Retreat"',
+    text: '"Relax and recharge with your colleagues in a serene environment".',
+  },
+  {
+    url: 'assets/istockphoto-493958679-612x612.jpg',
+    header: '"Employee Recognition Ceremony"',
+    text: '"Celebrate the achievements and contributions of our team".',
   },
   {
     url: 'assets/img5.jpeg',
-    header: 'Office Retreat',
-    text: 'Relax and recharge with your colleagues in a serene environment.',
+    header: '"Team Building Activity"',
+    text: '"Participate in engaging exercises to strengthen team bonds".',
   },
   {
     url: 'assets/img4.jpeg',
-    header: 'Employee Recognition Ceremony',
-    text: 'Celebrate the achievements and contributions of our team.',
-  },
-  {
-    url: 'assets/img5.jpeg',
-    header: 'Team Building Activity',
-    text: 'Participate in engaging exercises to strengthen team bonds.',
-  },
-  {
-    url: 'assets/img4.jpeg',
-    header: 'Leadership Training',
-    text: 'Develop essential leadership skills for personal and professional growth.',
+    header: '"Leadership Training"',
+    text: '"Develop essential leadership skills for personal and professional growth".',
   },
 ]
 
@@ -61,7 +61,7 @@ export const ImgSlider = () => {
           <p className='transition-opacity duration-500 drop-shadow-lg'>
             {images[currentIndex].text}
           </p>
-          <button className='sbtn  hover:bg-blue-700 text-white font-bold py-3 px-5  mt-1 transition-opacity duration-500'>
+          <button className='sbtn  text-white font-bold py-3 px-5  mt-1 transition-opacity duration-500'>
             Read More
           </button>
         </div>

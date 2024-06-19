@@ -6,6 +6,9 @@
 // import React, { useState } from "react";
 // import Img from '../images/carrer.jpg'
 // import Banner from '../component/ui/Banner'
+
+import MainAchieve from "./MainAchieve";
+
 // import React from 'react';     
 function Gallary() {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,6 +58,7 @@ function Gallary() {
                 </div>
             )}
         </div> */}
+        {/* <MainAchieve/> */}
     </>
   )
 };

@@ -17,6 +17,7 @@
 }
 
 .navBtn {
+    /* color: aqua; */
  position: absolute;
  top: 50%;
  transform: translateY(-50%);
@@ -30,6 +31,8 @@
 
 .img-slider-container:hover .navBtn {
  opacity: 1;
+ /* color: aqua; */
+ /* color: green; */
 
  /* Show buttons when the container is hovered over */
 }
@@ -45,6 +48,10 @@
 .sbtn{
     border-radius: 60px;
     background-color: var(--maincolor);
+}
+.sbtn:hover{
+    background-color: green;
+    
 }
 /* ImgSlider.css */
 .text-overlay {
@@ -71,3 +78,33 @@
  font-size: 1.5rem;
  font-weight: lighter;
 }
+/* ImgSlider.css */
+
+/* Override pagination bullet styles */
+.rssi-bullets {
+    bottom: 10px; /* Adjust position if needed */
+  }
+  
+  .rssi-bullets .rssi-bullet {
+    background-color: #cccccc; /* Default bullet color */
+  }
+  
+  .rssi-bullets .rssi-bullet.active {
+    background-color: #ff5733; /* Active bullet color */
+  }
+  
+  /* Override navigation button styles */
+  .rssi-nav {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%; /* Make buttons circular */
+  }
+  
+  .rssi-nav:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+  }
+  
+  .rssi-nav::before {
+    color: #ffffff; /* Icon color */
+    font-size: 24px; /* Icon size */
+  }
+  

@@ -1,0 +1,40 @@
+.achievements{
+    display: flex;
+    flex-wrap: wrap;
+}
+.achievements h4{
+    font-size: 20px;
+}
+.pgap{
+    margin: 30px 0px 30px 0px;
+}
+.achievepara{
+    margin: 20px 0px 30px 0px;
+}
+.achievepara h2{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0px 5px 0px
+}
+.acheiveimg{
+    box-shadow: 3px 4px 18px rgb(182, 174, 174);
+   }
+@media screen and (min-width: 768px){
+    .achievedis{
+        width: 70%;
+        margin: auto;
+    }
+   .achievements{
+    flex-wrap: nowrap;
+    width: 70%;
+    margin: auto;
+   }
+   .achievecontain{
+    margin: 70px 50px 0px 0px;
+    width: 70%;
+   }
+   .acheiveimg{
+    width: 30%;
+    margin: 20px 0px 0px 0px;
+   }
+}

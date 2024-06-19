@@ -389,28 +389,28 @@ const Navbar = () => {
             <div className='dropdownInsights'>
               <button
                 className='dropdown-item'
-                onClick={() => navigate('/insights/apple')}
+                onClick={() => navigate('/MainAchieve')}
               >
-                Apple
+                Achievements
               </button>
               <button
                 className='dropdown-item'
-                onClick={() => navigate('/insights/ball')}
+                onClick={() => navigate('/Profile ')}
               >
-                Ball
+                Profile
               </button>
               <button
                 className='dropdown-item'
-                onClick={() => navigate('/insights/cat')}
+                onClick={() => navigate('/NewsBlogs')}
               >
-                Cat
+                News&Blogs
               </button>
-              <button
+              {/* <button
                 className='dropdown-item'
                 onClick={() => navigate('/insights/dog')}
               >
                 Dog
-              </button>
+              </button> */}
             </div>
           )}
           <button className='nav-title' onClick={() => navigate('/career')}>

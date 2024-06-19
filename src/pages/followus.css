@@ -14,7 +14,13 @@
     text-align: center;
     margin-bottom: 20px;
 }
-
+.theme_color{
+    font-size:35px;
+    font-weight: bold;
+}
+.theme_color span{
+    color: var(--fontcolor);
+}
 .auto-container {
     display: flex;
     flex-wrap: wrap;

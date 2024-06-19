@@ -7,7 +7,7 @@
     margin: 20px 0px 20px 0px;
 }
 .emtext span{
-    color: orange;
+    color: var(--fontcolor);
 }
 /* Centered text */
 .text-center {
@@ -18,10 +18,9 @@
     left:41%;
     /* top: 1px; */
     margin-top: 85px
-
 }
 .text-center span{
-    color: orange;
+    color: var(--fontcolor);
 }
 /* Gallery list */
 .Gallery {
@@ -61,6 +60,9 @@
     background-color: #007bff;
     color: white;
     border-radius: 5px;
+}
+.Eventgallary{
+    background-color: var(--bgcolor);
 }
 
 /* Media queries for responsiveness */
