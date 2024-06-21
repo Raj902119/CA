@@ -23,19 +23,19 @@ function Profile() {
                 </div>
             </div>
             <hr/>
-
+      <div className="achievewid">
         <div className="achievedis">
             <div className="achievepara">
             <h2> Vision </h2>
-                To become the most trusted, efficient and result-oriented companion to empower entrepreneurs, Start-ups and corporates for uninterrupted growth through world-class business strategies.
-
+                <p>To become the most trusted, efficient and result-oriented companion to empower entrepreneurs, Start-ups and corporates for uninterrupted growth through world-class business strategies.
+               </p>
             </div>
             <div className="achievepara">
                 <h2> Mission </h2>
-                To reach out 1000+ businesses to boost their profitability through most sustainable business strategies which will have positive impact on taxes, human resources, finance, resources and overall key factors of organisation
+               <p> To reach out 1000+ businesses to boost their profitability through most sustainable business strategies which will have positive impact on taxes, human resources, finance, resources and overall key factors of organisation</p>
             </div>
          </div>   
-
+         </div>
         </>
     )
 }

@@ -10,7 +10,7 @@ function FollowUs() {
         </div>
         <div class="auto-container">
             <div class="column">
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcadhirajostwal%2F&tabs=timeline&width=520&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500"></iframe>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcadhirajostwal%2F&tabs=timeline&width=520&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="80%" height="500"></iframe>
             </div>
             <div class="column">
                 <iframe src="https://www.instagram.com/cadhirajostwal/embed/" width="100%" height="500"></iframe>

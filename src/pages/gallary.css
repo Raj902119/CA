@@ -1,79 +1,38 @@
-
 .gallary{
-    display: flex;
+    padding: 20px 20px 20px 20px;
+    display: flex;  
     flex-wrap: wrap;
-    margin: 40px 40px 0px 40px;
-    justify-content: center;
+    background-color: var(--bgcolor);
+ 
+    gap: 10px;
 }
-/* ImageDropdown.css */
-.dropdown-container {
-    position: relative;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.dropdown-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    outline: none;
-}
-.dropdown-button:hover {
-    background-color: #0056b3;
-}
-.dropdown-content {
-    display: flex;
-    flex-wrap: wrap;  
-}
-.dropdown-image {
-    /* margin-left: 90%; */
+.img-fluid{
     width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.dropdown-image:last-child {
-    margin-bottom: 0;
-}
-.hedding{
-    text-align: center;
-    font-size: 35px;
-    font-weight: bold;
+    height: 25%;
+
 }
 @media screen and (min-width: 768px){
-    .gallary{
-        display: flex;
-        flex-wrap: nowrap;
+    .img-fluid{
+        width: 32.8%;
+        height: 25%;
+    
     }
-    .gallary .gsub{
-        padding: 20px;
-        width: 20%;    
-    }
-    .dropdown-content {
-        display: flex;
-        flex-wrap: nowrap;
-        /* flex-direction: column; */
-        /* position: absolute; */
-        background-color: #f9f9f9;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        padding: 10px;
-        z-index: 1;
-        border-radius: 5px;
-        width: 200px;
-    }
-    .dropdown-image {
-        margin-left: 90%;
-    }
-    .dropdown-image {
-        /* margin-left: 90%; */
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+.img5{
+    margin-top: -11%;
+}
+.img6{
+    margin-top: -5%;
+}
+.img8{
+    margin-top: -65%;
+}
+.img9{
+    margin-top: -65%;
+}
+.img7{
+    /* margin: 0px 0px -2% -69%; */
+    position: absolute;
+    top: 1120px;
+    left: 1019px;
+}
 }

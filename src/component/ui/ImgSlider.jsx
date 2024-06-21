@@ -10,27 +10,27 @@ const images = [
   },
   {
     url: 'assets/hero2.jpg',
-    header: '"Leadership Conference"',
+    header: 'Leadership Conference',
     text: '"Empower leaders with insights and strategies for success".',
   },
   {
-    url: 'assets/hero4.jpg',
-    header: '"Office Retreat"',
+    url: 'assets/hero3.jpg',
+    header: 'Office Retreat',
     text: '"Relax and recharge with your colleagues in a serene environment".',
   },
   {
-    url: 'assets/istockphoto-493958679-612x612.jpg',
-    header: '"Employee Recognition Ceremony"',
+    url: 'assets/hero4.jpg',
+    header: 'Employee Recognition Ceremony',
     text: '"Celebrate the achievements and contributions of our team".',
   },
   {
-    url: 'assets/img5.jpeg',
-    header: '"Team Building Activity"',
+    url: 'assets/hero1.jpg',
+    header: 'Team Building Activity',
     text: '"Participate in engaging exercises to strengthen team bonds".',
   },
   {
-    url: 'assets/img4.jpeg',
-    header: '"Leadership Training"',
+    url: 'assets/hero3.jpg',
+    header: 'Leadership Training',
     text: '"Develop essential leadership skills for personal and professional growth".',
   },
 ]
@@ -47,6 +47,7 @@ export const ImgSlider = () => {
   return (
     <div className='img-slider-container'>
       <SimpleImageSlider
+      // fontfamily={'var(--mainfont)'}
         width={'100%'}
         height={680}
         images={images}

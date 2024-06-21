@@ -416,7 +416,7 @@ const Navbar = () => {
           <button className='nav-title' onClick={() => navigate('/career')}>
             Career
           </button>
-          <button className='nav-title' onClick={() => navigate('/gallary')}>
+          <button className='nav-title' onClick={() => navigate('/Gallary')}>
             Gallary
           </button>
           <button className='nav-title' onClick={() => navigate('/contact')}>

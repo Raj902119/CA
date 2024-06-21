@@ -161,3 +161,91 @@
     display: block;
   }
 }
+
+
+
+
+
+
+
+/* navbar.css */
+.nav {
+  position: fixed;
+  top: 0;
+  /* bottom: 10; */
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* .nav-left {
+  display: flex;
+  align-items: center;
+} */
+
+/* .nav-logo {
+  height: 50px;
+} */
+/* 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+} */
+
+/* .nav-icons {
+  display: flex;
+  gap: 10px;
+} */
+/* 
+.nav-cont {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+} */
+
+/* .nav-title {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+} */
+
+.nav-title:hover {
+  color: grey;
+}
+
+.dropdownService,
+.dropdownInsights {
+  /* position: absolute; */
+  /* top: 60px; Adjust based on your navbar height */
+  /* background-color: white; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* z-index: 999; */
+}
+
+/* .dropdown-item {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+} */
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* .menu {
+  display: none;
+} */
+
+body {
+  padding-top: 80px; 
+}

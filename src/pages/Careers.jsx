@@ -13,7 +13,7 @@ function Careers() {
                 <a href="/Home"></a><p>Home Shape your Career with us</p>
             </nav>Shape your Career with us</h2>
         </div> */}
-      <div class='content-bot'>
+      <div class='content-bot' id='careers'>
         <div className='careers'>
           <h2>
             CAREER <span>OPPORTUNITIES</span>

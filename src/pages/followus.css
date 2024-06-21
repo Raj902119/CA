@@ -1,25 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
 .news-section {
     padding: 20px;
 }
 
-.news-section h2 {
+/* .news-section h2 {
     color: #000;
-}
+} */
 
-.news-section h2 .theme_color {
-    color: #007bff; /* Or any theme color you prefer */
-}
+/* .news-section h2 .theme_color {
+    color: #007bff;
+} */
 
 .news-section .header {
     text-align: center;
     margin-bottom: 20px;
 }
-.theme_color{
+.header h2{
     font-size:35px;
     font-weight: bold;
+    font-family: var(--fontcolor);
 }
 .theme_color span{
     color: var(--fontcolor);
+    /* font-family: var(--mainfont); */
 }
 .auto-container {
     display: flex;
@@ -31,7 +39,7 @@
 
 .column, .column iframe {
     flex: 1;
-    min-width: 300px; /* Ensure responsiveness */
+    min-width: 250px; /* Ensure responsiveness */
 }
 
 @media (max-width: 768px) {

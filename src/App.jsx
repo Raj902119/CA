@@ -4,7 +4,7 @@ import React from 'react'
 
 // Pages
 import Home from './pages/Home'
-import Gallery from './pages/Gallary.jsx'
+import Gallary from './pages/Gallary.jsx'
 import Contact from './pages/Contact.jsx'
 import Cards from './pages/WWDCards.jsx'
 import ServicePage from './pages/services/ServicePage'
@@ -26,7 +26,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/gallery' element={<Gallery />} />
+        <Route path='/gallary' element={<Gallary />} />
         {/* <Route path='/award' element={<Award />} /> */}
         <Route path='/cards' element={<Cards />} />
         <Route path='/contact' element={<Contact />} />

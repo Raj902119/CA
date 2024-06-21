@@ -14,11 +14,12 @@ white */
   border: 1px solid red;
 }
 :root{
+  --mainfont:font-family: "Playfair Display", serif;
     --maincolor:#EF6645;
     --btncolor:#EF6645;
     --fontcolor:orange;
     /* --font1:'Lobster', cursive;#F3F3F3 */
     /* --font2:'Righteous', cursive; */
     --bgcolor:#F3F3F3; 
-    --bgcolor2:#212529;
+    --bgcolor2:yellow;
   }

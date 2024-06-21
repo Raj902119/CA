@@ -5,6 +5,7 @@
 }
 /* ImgSlider.css */
 .img-slider-container {
+  /* font-family: var(----mainfont); */
  width: 100%;
  height: auto;
  margin: auto;
@@ -50,7 +51,8 @@
     background-color: var(--maincolor);
 }
 .sbtn:hover{
-    background-color: green;
+    background-color: var(--bgcolor);
+    color: black;
     
 }
 /* ImgSlider.css */
