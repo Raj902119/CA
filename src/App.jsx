@@ -1,7 +1,7 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import React from 'react'
-
+// import {BrowserRouter} from "react-router-dom";
 // Pages
 import Home from './pages/Home'
 import Gallary from './pages/Gallary.jsx'
@@ -13,9 +13,6 @@ import ServicePage from './pages/services/ServicePage'
 import Navbar from './component/ui/Navbar'
 import Footer from './pages/Footer'
 import Careers from './pages/Careers.jsx'
-import Award from './pages/Award.jsx'
-import About from './pages/About.jsx'
-import Employee from './pages/Employee.jsx'
 import MainAchieve from './pages/MainAchieve.jsx'
 import Profile from './pages/Profile.jsx'
 import NewsBlogs from './pages/NewsBlogs.jsx'
@@ -23,6 +20,7 @@ import NewsBlogs from './pages/NewsBlogs.jsx'
 function App() {
   return (
     <>
+    {/* <BrowserRouter basename='/'> */}
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -41,6 +39,7 @@ function App() {
       </Routes>
       {/* Footer */}
       <Footer />
+      {/* </BrowserRouter> */}
     </>
   )
 }

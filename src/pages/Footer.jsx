@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-// import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import flogo from '../images/footer-logo.png';
 import { FaFacebookF, FaLinkedinIn, FaYoutube, FaInstagram, } from 'react-icons/fa';
 
 const Footer = () => {
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+      navigate('/new-page');
+      window.scrollTo(0, 0); 
+    };
     return (
         <footer className="ca-footer">
             <div className="footer-container">
@@ -14,7 +20,7 @@ const Footer = () => {
                         <img src={flogo} className="img-responsive" alt="Lohia Jain Group" />
                         <ul className="ca-list ca-social-link">
 
-                            <li><Link href="https://www.facebook.com/cadhirajostwal" target="_blank" rel="noopener noreferrer"><FaFacebookF className='icons' /></Link></li>
+                            <li><Link href="https://www.facebook.com/cadhirajostwal" target="_blank"  rel="noopener noreferrer"><FaFacebookF className='icons' /></Link></li>
                             <li><Link href="https://www.linkedin.com/in/event-dtl-191997314/"><FaLinkedinIn className='icons' /></Link></li>
                             <li><Link href="https://www.instagram.com/cadhirajostwal/"><FaInstagram className='icons' /></Link></li>
                             <li><Link href="https://www.youtube.com/@CADhirajOstwal"><FaYoutube className='icons' /></Link></li>
@@ -25,13 +31,13 @@ const Footer = () => {
                     <div className="footer-item quick-link">
                         <h4 className="ca-heading text-uppercase">Quick link</h4>
                         <ul className="ca-list ca-quick-link text-capitalize">
-                            <li><Link to="Home">Home</Link></li>
-                            <li><Link to="career">Career</Link></li>
-                            <li><Link to="gallary">Gallary</Link></li>
-                            <li><Link to="contact">Contact</Link></li>
-                            <li><Link to="MainAchieve">Achievements</Link></li>
-                            <li><Link to="profile">Profile</Link></li>
-                            <li><Link to="newsblogs">News&Blogs</Link></li>
+                            <li><Link to="Home" onClick={handleButtonClick}>Home</Link></li>
+                            <li><Link to="career" onClick={handleButtonClick}>Career</Link></li>
+                            <li><Link to="gallary" onClick={handleButtonClick}>Gallary</Link></li>
+                            <li><Link to="contact" onClick={handleButtonClick}>Contact</Link></li>
+                            <li><Link to="MainAchieve" onClick={handleButtonClick}>Achievements</Link></li>
+                            <li><Link to="profile" onClick={handleButtonClick}>Profile</Link></li>
+                            <li><Link to="newsblogs" onClick={handleButtonClick}>News&Blogs</Link></li>
                         </ul>
                     </div>
                     <div className="footer-item office">
