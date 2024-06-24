@@ -1,5 +1,5 @@
 .ca-footer {
-    background-color: #222;
+    background-color:#0f1010;
     color: #fff;
     padding: 20px 0;
 }
@@ -36,7 +36,8 @@
     text-decoration: none;
 }
 .ca-list a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: #f4b942;
 }
 .ca-social-link {
     display: flex;
@@ -60,7 +61,7 @@
     margin-right: 30px;
 }
 .footer-bot {
-    background-color: #111;
+    background: linear-gradient(295deg, rgba(244,81,0,1) 37%, rgba(35,11,11,1)96%);
     padding: 10px 0;
     text-align: center;
 }

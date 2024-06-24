@@ -24,12 +24,12 @@ const images = [
     text: '"Celebrate the achievements and contributions of our team".',
   },
   {
-    url: 'assets/hero1.jpg',
+    url: 'assets/hero5.jpg',
     header: 'Team Building Activity',
     text: '"Participate in engaging exercises to strengthen team bonds".',
   },
   {
-    url: 'assets/hero3.jpg',
+    url: 'assets/hero6.jpg',
     header: 'Leadership Training',
     text: '"Develop essential leadership skills for personal and professional growth".',
   },
@@ -56,6 +56,7 @@ export const ImgSlider = () => {
         onStartSlide={onSlideChange}
         autoPlay={true}
       />
+      
       <div className='text-overlay drop-shadow-lg'>
         <h1 className='drop-shadow-lg'>{images[currentIndex].header}</h1>
         <div className={`transition-opacity duration-500 opacity-100`}>

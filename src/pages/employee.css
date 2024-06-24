@@ -6,7 +6,7 @@
 }
 .emtext h2{
   margin-bottom: 15px;
-  font-family: var(--fontcolor);
+  font-family: var(--mainfont);
 }
 .emtext span{
   color: var(--fontcolor);
@@ -32,7 +32,6 @@
 }
 
 .slide {
-  /* background-color:#e8e0e0d8; */
   margin: 33px 0px 33px 0px;
   border-radius: 10px;
   box-shadow: 3px 4px 18px rgb(212, 204, 204);

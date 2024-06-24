@@ -4,6 +4,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { styled, Box, Grid, Typography, Button } from '@mui/material';
 import './award.css'
+
+// import React from 'react';
+import { Link } from 'react-router-dom';
 // Import your images
 import aword1 from '../images/Vishwa-Maitri-Sangha.png';
 import aword2 from '../images/maharashtra-rajya-marathi-patrakar-sangha.png';
@@ -110,7 +113,7 @@ const Award = () => {
                     2018-19: Facilitated for BNI EXCELLENCE tenure green pin holder.
                   </AwardText>
                   <button className='sbtn  text-white font-bold py-3 px-5  mt-1 transition-opacity duration-500'>
-           <a href="./MainAchieve">Read More</a>
+           <Link to="./NewsBlogs">Read More</Link>
           </button>
                 </AwardContent>
               </Grid>

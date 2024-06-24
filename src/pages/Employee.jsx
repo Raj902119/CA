@@ -1,9 +1,11 @@
-import emp1 from "../images/emp1.jpg";
-import emp2 from "../images/emp2.jpg";
-import emp3 from "../images/emp3.jpg";
-import emp4 from "../images/emp4.jpg";
-import emp5 from "../images/emp5.jpg";
-// import emp6 from "../images/emp6.jpg";
+import emp1 from "../images/nagini.jpg";
+import emp2 from "../images/chanchl.jpg";
+import emp3 from "../images/hemant.jpg";
+import emp4 from "../images/gauri.jpg";
+import emp5 from "../images/purva.jpg";
+import emp6 from "../images/ganesh.jpg";
+import emp7 from "../images/mitali.jpg";
+import emp8 from "../images/mukta.jpg";
 // import Img from '../images/carrer.jpg';
 // import Banner from '../component/ui/Banner';
 import './employee.css';
@@ -11,11 +13,14 @@ import React, { useState, useEffect, useRef } from 'react';
 
 function Employee() {
     const employees = [
-        { image: emp1, name: "Employee 1", position: "Position 1" },
-        { image: emp2, name: "Employee 2", position: "Position 2" },
-        { image: emp3, name: "Employee 3", position: "Position 3" },
-        { image: emp4, name: "Employee 4", position: "Position 4" },
-        { image: emp5, name: "Employee 5", position: "Position 5" },
+        { image: emp1, name: "Nagini Mhatre", position: "Account Assistant" },
+        { image: emp2, name: "Chanchal Mate", position: "Account Assistant" },
+        { image: emp3, name: "Hemant Zujam", position: "Senior Executive" },
+        { image: emp4, name: "Gauri Jagtap", position: "Account Assistant" },
+        { image: emp5, name: "Purva Kulkarni", position: "Account Assistant" },
+        { image: emp6, name: "Ganesh Manjare", position: "Manger" },
+        { image: emp7, name: "Mitali Shinde", position: "Account Assistant" },
+        { image: emp8, name: "Mukta Jagdale", position: "Account Assistant" },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

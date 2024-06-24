@@ -54,7 +54,7 @@ const Navbar = () => {
     setShowInsightsDropdown((prev) => !prev)
     if (showServicesDropdown) {
       setShowServicesDropdown(false)
-    }
+    }   
   }
 
   const [openServices, setOpenServices] = React.useState(false)
@@ -174,9 +174,9 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
-              onClick={() => navigate('/insights/apple')}
+              onClick={() => navigate('/insights/Achievements')}
             >
-              <ListItemText primary='Apple' />
+              <ListItemText primary='Achievements' />
             </ListItemButton>
             <ListItemButton
               sx={{
@@ -184,9 +184,9 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
-              onClick={() => navigate('/insights/ball')}
+              onClick={() => navigate('/insights/Profile')}
             >
-              <ListItemText primary='Ball' />
+              <ListItemText primary='Profile' />
             </ListItemButton>
             <ListItemButton
               sx={{
@@ -194,9 +194,9 @@ const Navbar = () => {
                 textAlign: 'center',
                 width: '100%',
               }}
-              onClick={() => navigate('/insights/cat')}
+              onClick={() => navigate('/insights/News&Blogs')}
             >
-              <ListItemText primary='Cat' />
+              <ListItemText primary='News&Blogs' />
             </ListItemButton>
             <ListItemButton
               sx={{
@@ -303,7 +303,7 @@ const Navbar = () => {
       <div className='nav-right'>
         <div className='nav-icons'>
           <IconButton
-            href='https://www.facebook.com'
+            href='https://www.facebook.com/cadhirajostwal'
             target='_blank'
             aria-label='Facebook'
             sx={{ color: 'black' }}
@@ -311,7 +311,7 @@ const Navbar = () => {
             <FacebookIcon />
           </IconButton>
           <IconButton
-            href='https://www.linkedin.com'
+            href='https://www.linkedin.com/in/event-dtl-191997314/'
             target='_blank'
             aria-label='LinkedIn'
             sx={{ color: 'black' }}
@@ -319,7 +319,7 @@ const Navbar = () => {
             <LinkedInIcon />
           </IconButton>
           <IconButton
-            href='https://www.instagram.com'
+            href='https://www.instagram.com/cadhirajostwal/'
             target='_blank'
             aria-label='Instagram'
             sx={{ color: 'black' }}

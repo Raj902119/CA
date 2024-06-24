@@ -2,24 +2,17 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* #F64403 main color
-#EF6645 sub color
-black 
-gray
-white */
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  /* overflow: hidden; */
 }
 :root{
-  --mainfont:font-family: "Playfair Display", serif;
-    --maincolor:#EF6645;
-    --btncolor:#EF6645;
-    --fontcolor:orange;
-    /* --font1:'Lobster', cursive;#F3F3F3 */
-    /* --font2:'Righteous', cursive; */
+  --mainfont: "Playfair Display", serif;
+    --maincolor:#ff0000;
+    --btncolor:#ce3008;
+    --fontcolor:#ff0000;
     --bgcolor:#F3F3F3; 
-    --bgcolor2:yellow;
   }

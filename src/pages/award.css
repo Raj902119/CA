@@ -2,7 +2,7 @@
     font-weight: bold;
     font-size: 35px;
     margin-bottom: 30px;
-    font-family: var(--fontcolor);
+    font-family: var(--mainfont);
 }
 .awordh span{
     color:var(--fontcolor);
